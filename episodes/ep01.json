@@ -7,7 +7,7 @@
     "cue": "C06",
     "words": ["figure", "figures", "someone", "somebody", "person", "people", "stranger", "watching", "watched"]
   },
-  "post": { "hook": "The message said: don't travel after dark." },
+  "post": { "hook": "Seven cars. Doors open. Nobody in them." },
   "cues": [
     {
       "id": "C01",

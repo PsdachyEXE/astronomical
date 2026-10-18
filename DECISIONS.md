@@ -129,3 +129,12 @@ One line of reasoning per call. Grouped by build-brief step. Spec contradictions
 - **Renders run at concurrency 4 with PNG frames.** PNG keeps flat colour exact for the pixel test; four matches the build machine's cores. `--concurrency` overrides it.
 - **The thumbnail is the master's DAY card on its last fully drawn frame with no caption over it.** The brief asks for "a PNG of the card frame"; a caption over a thumbnail reads as a mistake.
 - **Renders are not committed at every step; the deliverables in `out/` are committed once, after the acceptance tests pass.** Each re-render is a fresh 3 MB binary, and git keeps every one.
+
+## Step 12: post metadata
+
+- **One title for every platform ("TALLY · Day 1 · Tally: 1"); the description is the day and tally, an optional hook line from the episode file, the logline, the episode number and a fiction line.** Built from the day and tally as asked; the hook gives each day one concrete image without spoiling the sting.
+- **Every description says the Northern Recovery Authority and its message are invented.** The bible warns that a convincing fake emergency message is a problem in its own right; saying so up front is cheaper than a takedown.
+- **At most three hashtags per platform: #TALLY, #animation, and one platform-native tag where it helps (#Shorts, #serial).** "Keep it plain; no hashtag stuffing."
+- **Snapchat gets a short caption (day, tally, hook, a one-line fiction note).** Spotlight shows little text; the length limit in `src/post.ts` is a conservative guess to re-check in the app.
+- **Post text is checked against the episode's hidden-detail words.** A description that names the figure at the vanishing point would spoil the rewatch the detail exists for.
+- **Episode 1's hook is "Seven cars. Doors open. Nobody in them."** It paraphrases the narration and gives away neither the bangs nor the sting.

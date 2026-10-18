@@ -1,0 +1,74 @@
+{
+  "episode": 1,
+  "day": 1,
+  "tally": {
+    "open": 1,
+    "close": 1
+  },
+  "thumbnail": "out/ep01.png",
+  "platforms": {
+    "youtube": {
+      "platform": "youtube",
+      "label": "YouTube Shorts",
+      "file": "out/ep01.youtube.mp4",
+      "title": "TALLY · Day 1 · Tally: 1",
+      "description": "Day 1. Tally: 1.\nSeven cars. Doors open. Nobody in them.\nAfter the flash, a looped radio message promises rescue to groups of ten. On the Stuart Highway, a road train driver starts counting.\nEpisode 1 of TALLY, a serial told one day at a time.\nFiction. The Northern Recovery Authority and its message are invented; this is not a real emergency broadcast.",
+      "hashtags": [
+        "#TALLY",
+        "#Shorts",
+        "#animation"
+      ],
+      "caption": "TALLY · Day 1 · Tally: 1\n\nDay 1. Tally: 1.\nSeven cars. Doors open. Nobody in them.\nAfter the flash, a looped radio message promises rescue to groups of ten. On the Stuart Highway, a road train driver starts counting.\nEpisode 1 of TALLY, a serial told one day at a time.\nFiction. The Northern Recovery Authority and its message are invented; this is not a real emergency broadcast.\n\n#TALLY #Shorts #animation"
+    },
+    "instagram": {
+      "platform": "instagram",
+      "label": "Instagram Reels",
+      "file": "out/ep01.instagram.mp4",
+      "title": "TALLY · Day 1 · Tally: 1",
+      "description": "Day 1. Tally: 1.\nSeven cars. Doors open. Nobody in them.\nAfter the flash, a looped radio message promises rescue to groups of ten. On the Stuart Highway, a road train driver starts counting.\nEpisode 1 of TALLY, a serial told one day at a time.\nFiction. The Northern Recovery Authority and its message are invented; this is not a real emergency broadcast.",
+      "hashtags": [
+        "#TALLY",
+        "#animation",
+        "#serial"
+      ],
+      "caption": "TALLY · Day 1 · Tally: 1\n\nDay 1. Tally: 1.\nSeven cars. Doors open. Nobody in them.\nAfter the flash, a looped radio message promises rescue to groups of ten. On the Stuart Highway, a road train driver starts counting.\nEpisode 1 of TALLY, a serial told one day at a time.\nFiction. The Northern Recovery Authority and its message are invented; this is not a real emergency broadcast.\n\n#TALLY #animation #serial"
+    },
+    "snapchat": {
+      "platform": "snapchat",
+      "label": "Snapchat Spotlight",
+      "file": "out/ep01.snapchat.mp4",
+      "title": "TALLY · Day 1 · Tally: 1",
+      "description": "Day 1. Tally: 1.\nSeven cars. Doors open. Nobody in them.\nFiction. Not a real emergency broadcast.",
+      "hashtags": [
+        "#TALLY",
+        "#animation"
+      ],
+      "caption": "Day 1. Tally: 1.\nSeven cars. Doors open. Nobody in them.\nFiction. Not a real emergency broadcast. #TALLY #animation"
+    },
+    "tiktok": {
+      "platform": "tiktok",
+      "label": "TikTok",
+      "file": "out/ep01.tiktok.mp4",
+      "title": "TALLY · Day 1 · Tally: 1",
+      "description": "Day 1. Tally: 1.\nSeven cars. Doors open. Nobody in them.\nAfter the flash, a looped radio message promises rescue to groups of ten. On the Stuart Highway, a road train driver starts counting.\nEpisode 1 of TALLY, a serial told one day at a time.\nFiction. The Northern Recovery Authority and its message are invented; this is not a real emergency broadcast.",
+      "hashtags": [
+        "#TALLY",
+        "#animation",
+        "#serial"
+      ],
+      "caption": "TALLY · Day 1 · Tally: 1\n\nDay 1. Tally: 1.\nSeven cars. Doors open. Nobody in them.\nAfter the flash, a looped radio message promises rescue to groups of ten. On the Stuart Highway, a road train driver starts counting.\nEpisode 1 of TALLY, a serial told one day at a time.\nFiction. The Northern Recovery Authority and its message are invented; this is not a real emergency broadcast.\n\n#TALLY #animation #serial"
+    },
+    "facebook": {
+      "platform": "facebook",
+      "label": "Facebook Reels",
+      "file": "out/ep01.facebook.mp4",
+      "title": "TALLY · Day 1 · Tally: 1",
+      "description": "Day 1. Tally: 1.\nSeven cars. Doors open. Nobody in them.\nAfter the flash, a looped radio message promises rescue to groups of ten. On the Stuart Highway, a road train driver starts counting.\nEpisode 1 of TALLY, a serial told one day at a time.\nFiction. The Northern Recovery Authority and its message are invented; this is not a real emergency broadcast.",
+      "hashtags": [
+        "#TALLY",
+        "#animation"
+      ],
+      "caption": "TALLY · Day 1 · Tally: 1\n\nDay 1. Tally: 1.\nSeven cars. Doors open. Nobody in them.\nAfter the flash, a looped radio message promises rescue to groups of ten. On the Stuart Highway, a road train driver starts counting.\nEpisode 1 of TALLY, a serial told one day at a time.\nFiction. The Northern Recovery Authority and its message are invented; this is not a real emergency broadcast.\n\n#TALLY #animation"
+    }
+  }
+}
