@@ -120,3 +120,12 @@ One line of reasoning per call. Grouped by build-brief step. Spec contradictions
 - **Captions stop at the end card.** The end card shows the tally and nothing else; "why" is still captioned over the cut to black.
 - **Long tallies wrap onto further rows of as many five-bar gates as the stage allows (three).** Season 1 peaks at six, but a card that overflowed at 25 would break the day the count gets there.
 - **Debug colours live in `src/palette.ts` under `DEBUG`.** No hex value appears outside that file.
+
+## Step 11: render
+
+- **Remotion encodes the picture once per target with that target's preset; the mix goes to a separate WAV, and system ffmpeg does only the loudness pass and the mux (`-c:v copy`).** One video encode per file, and the mastering stays outside the composition as the brief asks.
+- **Loudness pass: measure EBU R128, apply gain to -16 LUFS, limit at -2.5 dBTP with the limiter running at 192 kHz (4x) so it sees inter-sample peaks, encode AAC, measure the AAC, correct and repeat (up to five passes).** A single loudnorm pass can drift out of ±1 LU on a short, sparse mix, and AAC encoding can add a few tenths of a dB of true peak.
+- **H.264 profile and level are forced with an ffmpeg override (`-profile:v high -level:v 4.1`).** Remotion has no option for them and the brief asks for high profile.
+- **Renders run at concurrency 4 with PNG frames.** PNG keeps flat colour exact for the pixel test; four matches the build machine's cores. `--concurrency` overrides it.
+- **The thumbnail is the master's DAY card on its last fully drawn frame with no caption over it.** The brief asks for "a PNG of the card frame"; a caption over a thumbnail reads as a mistake.
+- **Renders are not committed at every step; the deliverables in `out/` are committed once, after the acceptance tests pass.** Each re-render is a fresh 3 MB binary, and git keeps every one.
