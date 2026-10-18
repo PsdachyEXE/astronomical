@@ -82,3 +82,16 @@ One line of reasoning per call. Grouped by build-brief step. Spec contradictions
 - **Captions are paged against the universal stage's row length (31 characters at 44 px Plex Mono), linger 0.25 s after the line and clear 0.05 s before the next.** Every platform reads the same pages at the same moments.
 - **The timeline also lints the episode-shape rules it can check: under 100 narrator words, at most 30 radio words, two voiceless seconds in the climax, a sting that is not a question, hidden-detail words absent from captions, and the tally adding up.** Episode 2 is a writing task; these catch the writing mistakes a build would otherwise ship.
 - **A cue that runs past its target is a warning, not an error.** Times in the doc are targets; the error is the runtime guard.
+
+## Step 7: scenes
+
+- **One scene draws per frame, chosen from the timeline, rather than a `<Sequence>` per cue.** Scenes hold no media, so a direct lookup is simpler and keeps every frame a pure function of the timeline and the frame number.
+- **The road train is drawn at 0.6 scale so the cab and all three trailers fit across the frame; Cal under it is at 0.55.** At the bible's 1.0 scale the truck is 1,930 px long; "cab and three trailers across the frame" wins over "about 240 px" for this one wide shot.
+- **Trailer decks ride 110 px above the ground at 1.0 scale.** Enough room for Cal to lie underneath with one arm reaching the chassis, without the trailers looking stilted.
+- **The flash is a full-frame white layer over the scenery, and the drain is that layer's opacity falling to zero over 1.5 s.** "The frame cuts to flash white" means the whole frame, and draining a white layer mixes every colour toward white by the same amount.
+- **The highway scene's push is centred on the vanishing point.** The hidden figure stands there, so the push leans toward it without moving it across the frame, and its height stays under 40 px (38.2 at 1.06).
+- **The hidden figure is one of Hollis's people: an ink figure at 0.15 scale, facing camera.** The truth section says his people move at night and the banging comes at night; Nine is the only cast in ink.
+- **The cab interior is ink except the windscreen; the sun is the text colour at 70%.** "Nothing else gets a colour of its own", and a dull disc in the one pale token reads as a low sun at dusk.
+- **At night, the lit window is the text colour at 20% over ink, with Cal as an ink silhouette inside.** "A slightly lighter rectangle", and a lit window is the only way Cal's jerk upright can be seen.
+- **The dawn line grows from the right edge at 150 px/s in the day-sky colour.** "Creeps along the horizon"; at that pace it crosses most of the frame by the cut to black.
+- **The end card fades the closing tally over its 1.5 s and holds the last two frames pure black.** The loop seam is then black to the DAY card with no fade across it.

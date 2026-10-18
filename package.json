@@ -20,7 +20,8 @@
     "verify": "tsx scripts/verify.ts",
     "test": "vitest run",
     "typecheck": "tsc",
-    "lint": "eslint src scripts tests && tsc"
+    "lint": "eslint src scripts tests && tsc",
+    "stills": "tsx scripts/stills.ts"
   },
   "dependencies": {
     "@remotion/bundler": "4.0.536",

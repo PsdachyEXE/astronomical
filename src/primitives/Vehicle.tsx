@@ -12,7 +12,7 @@ export const VEHICLE = {
   door: { x: 150, y: -232, w: 142, h: 184 },
   cabWheels: [60, 240],
   wheelRadius: 28,
-  trailer: { w: 520, h: 170, gap: 24, bottom: -112 },
+  trailer: { w: 520, h: 170, gap: 24, bottom: -126 },
   rail: { h: 16 },
   trailerWheels: [70, 130, 460],
   strut: 6,

@@ -39,8 +39,8 @@ export const Road: React.FC<RoadProps> = ({
   colour,
   dashColour,
   travelled,
-  dashLength = 0.75,
-  dashSpacing = 3,
+  dashLength = 0.45,
+  dashSpacing = 2.2,
   dashHalfWidth = 0.016,
 }) => {
   const near = NEAREST;

@@ -1,17 +1,43 @@
-import { AbsoluteFill } from "remotion";
+import { useMemo } from "react";
+import { AbsoluteFill, useCurrentFrame, useVideoConfig } from "remotion";
 import { SafeZoneOverlay } from "./debug/SafeZoneOverlay";
+import { ensureFonts } from "./fonts";
+import { timelineFromProps, type EpisodeProps } from "./lib/props";
+import type { TimelineCue } from "./lib/timeline";
 import { PALETTE } from "./palette";
-import type { TargetId } from "./platforms";
+import { stageFor } from "./platforms";
+import { SceneView } from "./scenes/SceneView";
 
-export type EpisodeProps = {
-  platform: TargetId;
-  debug: boolean;
-};
+ensureFonts();
 
-export const Episode: React.FC<EpisodeProps> = ({ platform, debug }) => {
+export const cueAtFrame = (cues: readonly TimelineCue[], frame: number): TimelineCue | null =>
+  cues.find((c) => frame >= c.startFrame && frame < c.endFrame) ?? cues[cues.length - 1] ?? null;
+
+/**
+ * One episode on one target. The target changes only the stage readable
+ * elements are laid out on, whether captions burn in, and (outside this
+ * component) the encode preset.
+ */
+export const Episode: React.FC<EpisodeProps> = (props) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const { timeline } = useMemo(() => timelineFromProps(props), [props.episode, props.timing, props.sfx, props.slug]);
+  const stage = stageFor(props.platform);
+  const cue = cueAtFrame(timeline.cues, frame);
+  const t = frame / fps;
   return (
     <AbsoluteFill style={{ backgroundColor: PALETTE.black }}>
-      {debug ? <SafeZoneOverlay platform={platform} /> : null}
+      {cue === null ? null : (
+        <SceneView
+          state={cue.state}
+          t={t}
+          frame={frame}
+          fps={fps}
+          stage={stage}
+          seed={`${timeline.slug}:${cue.synthetic ? cue.id : `shot${cue.shot}`}`}
+        />
+      )}
+      {props.debug ? <SafeZoneOverlay platform={props.platform} /> : null}
     </AbsoluteFill>
   );
 };

@@ -71,6 +71,16 @@ export const walk = (seconds: number): FigurePose => {
   };
 };
 
+/**
+ * When a walk told to stop by `until` actually stops: the last moment at or
+ * before it when the legs pass each other (mid-stride), so the figure settles
+ * into its rest pose without a jump.
+ */
+export const walkStopsAt = (until: number): number => {
+  const k = Math.floor((until - STEP_SECONDS / 2) / STEP_SECONDS + 1e-9);
+  return Math.max(0, STEP_SECONDS / 2 + k * STEP_SECONDS);
+};
+
 /** Seconds into a walk at which foot contacts happen, within [0, until). */
 export const stepTimes = (until: number): number[] => {
   const out: number[] = [];
