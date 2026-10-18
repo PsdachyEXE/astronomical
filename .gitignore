@@ -1,0 +1,15 @@
+node_modules
+dist
+.DS_Store
+.env
+
+# Render intermediates. The finished deliverables in out/ are committed.
+out/tmp/
+out/safecheck/
+out/verify/
+out/fixture.*
+out/ep02.*
+episodes/ep02.json
+assets/voice/ep02/
+assets/voice/fixture/
+docs/ep02.md

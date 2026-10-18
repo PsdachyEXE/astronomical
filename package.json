@@ -1,0 +1,49 @@
+{
+  "name": "tally",
+  "version": "0.1.0",
+  "description": "TALLY: a narrator-only animated serial, rendered from episode script files",
+  "private": true,
+  "license": "UNLICENSED",
+  "type": "module",
+  "engines": {
+    "node": "^20.19.0 || ^22.13.0 || >=24"
+  },
+  "scripts": {
+    "studio": "remotion studio",
+    "make-sfx": "tsx scripts/make-sfx.ts",
+    "tts": "tsx scripts/tts.ts",
+    "timeline": "tsx scripts/timeline.ts",
+    "render": "tsx scripts/render.ts",
+    "safecheck": "tsx scripts/safecheck.ts",
+    "post-meta": "tsx scripts/post-meta.ts",
+    "new-episode": "tsx scripts/new-episode.ts",
+    "verify": "tsx scripts/verify.ts",
+    "test": "vitest run",
+    "typecheck": "tsc",
+    "lint": "eslint src scripts tests && tsc"
+  },
+  "dependencies": {
+    "@remotion/bundler": "4.0.536",
+    "@remotion/cli": "4.0.536",
+    "@remotion/renderer": "4.0.536",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.536"
+  },
+  "devDependencies": {
+    "@remotion/eslint-config-flat": "4.0.536",
+    "@types/node": "22.20.5",
+    "@types/pngjs": "6.0.5",
+    "@types/react": "19.2.7",
+    "eslint": "10.12.0",
+    "pngjs": "7.0.0",
+    "prettier": "3.8.1",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3",
+    "vitest": "5.0.5",
+    "zod": "3.25.76"
+  },
+  "allowScripts": {
+    "esbuild": false
+  }
+}
