@@ -1,0 +1,28 @@
+{
+  "episode": 0,
+  "day": 8,
+  "tally": { "open": 3, "close": 4, "struck": [], "changes": [{ "cue": "F02", "to": 4 }] },
+  "voices": { "narrator": "cal", "radio": "authority" },
+  "post": {},
+  "cues": [
+    {
+      "id": "F01",
+      "part": "situation",
+      "scene": "highway-walk",
+      "state": { "sky": { "from": "drained" }, "cars": 3, "cal": { "move": "walk" } },
+      "narration": [{ "voice": "cal", "text": "Three of us on the road by noon.", "pauseBefore": 0.4 }],
+      "sfx": [{ "file": "wind", "until": "end", "gain": -20, "fadeIn": 0.5 }],
+      "minDuration": 30.5,
+      "notes": "Test fixture: two cues and a tally change from 3 to 4. Long enough to clear the 62 s floor."
+    },
+    {
+      "id": "F02",
+      "part": "situation",
+      "scene": "cab-exterior-night",
+      "state": { "window": { "lit": true }, "cal": { "pose": "upright" } },
+      "narration": [{ "voice": "cal", "text": "Four by last light.", "pauseBefore": 0.4 }],
+      "sfx": [{ "file": "drone", "until": "end", "gain": -14, "fadeIn": 1.0 }],
+      "minDuration": 30.5
+    }
+  ]
+}

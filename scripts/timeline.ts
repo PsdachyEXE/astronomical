@@ -6,52 +6,10 @@
  * and fails if the runtime leaves 62 to 170 s or any episode rule breaks.
  */
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
-import { describeCue, type Timeline, type TimelineCue } from "../src/lib/timeline";
 import { main, parseArgs } from "./lib/args";
-import { parseCueTable } from "./lib/cue-table";
+import { cueTable, parseCueTable } from "./lib/cue-table";
 import { loadTimeline } from "./lib/inputs";
 import { docFile, outFile, slugOf } from "./lib/paths";
-
-const s1 = (x: number): string => x.toFixed(1);
-
-const narrationCell = (c: TimelineCue): string => {
-  if (c.lines.length === 0) return c.synthetic ? "None." : "None, by design.";
-  return c.lines
-    .map((l, i) => {
-      const prev = c.lines[i - 1];
-      const pause = prev === undefined ? l.start - c.start : l.start - prev.end;
-      const lead = i === 0 ? (Math.abs(pause - 0.4) > 0.01 ? `Pause ${s1(pause)} s. ` : "") : `Pause ${s1(pause)} s. `;
-      return `${lead}${l.radio ? "Radio: " : ""}"${l.text}"`;
-    })
-    .join(" ");
-};
-
-const soundCell = (c: TimelineCue): string => {
-  if (c.sfx.length === 0) return "Silence";
-  const groups = new Map<string, typeof c.sfx>();
-  for (const ev of c.sfx) groups.set(ev.name, [...(groups.get(ev.name) ?? []), ev]);
-  return [...groups.entries()]
-    .map(([name, evs]) => {
-      const first = evs[0];
-      if (first === undefined) return "";
-      if (first.kind === "bed") return `${name} ${s1(first.start)}–${s1(first.end)} s`;
-      if (first.kind === "clip") return `${name} replayed ${s1(first.start)}–${s1(first.end)} s at ${first.gainTo} dB`;
-      if (evs.length > 3) return `${name} ×${evs.length} from ${s1(first.start)} s`;
-      return `${name} at ${evs.map((e) => s1(e.start)).join(", ")} s`;
-    })
-    .join("; ");
-};
-
-const esc = (s: string): string => s.replace(/\|/g, "\\|");
-
-export const cueTable = (tl: Timeline): string => {
-  const head = "| Cue | Start (s) | Dur (s) | Visual | Narration | Sound and radio |\n| --- | --- | --- | --- | --- | --- |";
-  const rows = tl.cues.map(
-    (c) =>
-      `| ${c.id} | ${s1(c.start)} | ${s1(c.duration)} | ${esc(describeCue(c))} | ${esc(narrationCell(c))} | ${esc(soundCell(c))} |`,
-  );
-  return [head, ...rows].join("\n");
-};
 
 main(() => {
   const args = parseArgs(process.argv.slice(2));

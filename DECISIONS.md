@@ -138,3 +138,9 @@ One line of reasoning per call. Grouped by build-brief step. Spec contradictions
 - **Snapchat gets a short caption (day, tally, hook, a one-line fiction note).** Spotlight shows little text; the length limit in `src/post.ts` is a conservative guess to re-check in the app.
 - **Post text is checked against the episode's hidden-detail words.** A description that names the figure at the vanishing point would spoil the rewatch the detail exists for.
 - **Episode 1's hook is "Seven cars. Doors open. Nobody in them."** It paraphrases the narration and gives away neither the bangs nor the sting.
+
+## Step 13: checking against the cue table
+
+- **`npm run verify -- <episode>` runs the ten acceptance tests against the real outputs: ffprobe and EBU R128 on every rendered file, the cut to white read back as pixels from the master, the bangs found as onsets in its decoded audio, the hidden figure's patch darkening at 28.0 s, the pixel comparison between master and variants, and the fixture's fourth stroke sampled mid-draw.** A check that only reads the timeline proves the plan, not the file.
+- **The pixel test compares seven frames per platform (card, captions on the flash, the jolt, the deepest push, the radio, the handprint, the end card) and allows zero differing pixels outside each platform's stage.** Those are the frames where a platform difference could leak: every readable element type and every camera or frame move.
+- **The fixture is a 62.2 s episode (two 30.5 s cues and the inserted card), not a two-second one.** "Renders with no code changes" means passing the same runtime guard every episode passes.

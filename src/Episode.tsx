@@ -24,7 +24,11 @@ export const cueAtFrame = (cues: readonly TimelineCue[], frame: number): Timelin
 export const Episode: React.FC<EpisodeProps> = (props) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const { timeline } = useMemo(() => timelineFromProps(props), [props.episode, props.timing, props.sfx, props.slug]);
+  const { episode, timing, sfx, slug } = props;
+  const { timeline } = useMemo(
+    () => timelineFromProps({ episode, timing, sfx, slug, platform: "master", debug: false }),
+    [episode, timing, sfx, slug],
+  );
   const stage = stageFor(props.platform);
   const cue = cueAtFrame(timeline.cues, frame);
   const t = frame / fps;
