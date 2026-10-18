@@ -39,3 +39,12 @@ One line of reasoning per call. Grouped by build-brief step. Spec contradictions
 - **Stopped cars are seen from behind in the pale road-dash colour, with the open door as a line.** Against the drained ground an ink car vanishes at the small end of the road.
 - **Rain, dust, glass and smudges are placed by a seeded Mulberry32 generator (`src/lib/rng.ts`).** No `Math.random` anywhere.
 - **A dev-only `Gallery` composition shows every primitive on one frame.** Step 3 has to end with something that runs.
+
+## Step 4: motion
+
+- **Spec conflict: the bible's motion list is "complete" and "nothing else is animated", but the Episode 1 table directs a jolt, a door shake, falling glass, dust drift, scrolling dashes, sky changes, a radio light and a dawn line.** The seven figure moves stay the complete list for figures; the environment moves the table asks for live in `src/motion.ts` beside them, so nothing animates outside that file.
+- **Walk contact lands on every multiple of 0.8 s from the start of the shot.** Footstep sounds use the same grid, so feet and gravel agree without a second clock.
+- **Turn uses an ease-in-out over its 6 frames; push is linear.** A mouth that snaps reads as a cut, and a push that eases reads as a move the bible doesn't allow.
+- **Flinch is the 2-frame squash first, then the 8 px jump over the remaining 8 frames.** The bible gives the parts and the 10-frame total, not the order; squash-then-jump is the readable one.
+- **The jolt picks a fresh seeded offset of 2 to 4 px each frame; the door shake is a fixed decaying pattern peaking at 6 px.** The blast should feel random and the fist should feel the same each time.
+- **Glass falls under gravity (2,600 px/s²); rain falls at a steady 1,400 px/s.** The bible gives rain's speed; glass needs to look dropped, not poured.
