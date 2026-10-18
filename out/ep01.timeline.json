@@ -1,0 +1,3383 @@
+{
+  "slug": "ep01",
+  "episode": 1,
+  "day": 1,
+  "fps": 30,
+  "duration": 73.5,
+  "frames": 2205,
+  "tally": {
+    "open": 1,
+    "close": 1
+  },
+  "cues": [
+    {
+      "id": "C01",
+      "part": "card",
+      "scene": "day-card",
+      "synthetic": false,
+      "start": 0,
+      "end": 3,
+      "duration": 3,
+      "startFrame": 0,
+      "endFrame": 90,
+      "minDuration": 3,
+      "shot": 1,
+      "shotStart": 0,
+      "state": {
+        "kind": "day-card",
+        "dayText": "DAY 1",
+        "marks": 1,
+        "struck": [],
+        "drawStart": 0
+      },
+      "lines": [
+        {
+          "index": 0,
+          "voice": "cal",
+          "text": "Day one. Tally: one.",
+          "radio": false,
+          "start": 0.4,
+          "end": 2.243313,
+          "file": "voice/ep01/C01-0.wav",
+          "words": [
+            {
+              "text": "Day",
+              "start": 0.4,
+              "end": 0.860828
+            },
+            {
+              "text": "one.",
+              "start": 0.860828,
+              "end": 1.321656
+            },
+            {
+              "text": "Tally:",
+              "start": 1.321656,
+              "end": 1.782484
+            },
+            {
+              "text": "one.",
+              "start": 1.782484,
+              "end": 2.243313
+            }
+          ],
+          "wordTiming": "estimated"
+        }
+      ],
+      "triggers": [],
+      "sfx": [
+        {
+          "id": "C01:click#0",
+          "kind": "sfx",
+          "cue": "C01",
+          "name": "click",
+          "src": "sfx/click.wav",
+          "start": 0,
+          "end": 0.06,
+          "offset": 0,
+          "envStart": 0,
+          "envEnd": 0.06,
+          "gainFrom": -14,
+          "gainTo": -14,
+          "fadeIn": 0,
+          "fadeOut": 0,
+          "pitch": 1,
+          "clear": null
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "C02",
+      "part": "situation",
+      "scene": "black-slit",
+      "synthetic": false,
+      "start": 3,
+      "end": 6.5,
+      "duration": 3.5,
+      "startFrame": 90,
+      "endFrame": 195,
+      "minDuration": 3.5,
+      "shot": 2,
+      "shotStart": 3,
+      "state": {
+        "kind": "black-slit",
+        "slitAt": 3.8
+      },
+      "lines": [
+        {
+          "index": 0,
+          "voice": "cal",
+          "text": "I didn't see it.",
+          "radio": false,
+          "start": 3.4,
+          "end": 5.243313,
+          "file": "voice/ep01/C02-0.wav",
+          "words": [
+            {
+              "text": "I",
+              "start": 3.4,
+              "end": 3.860828
+            },
+            {
+              "text": "didn't",
+              "start": 3.860828,
+              "end": 4.321656
+            },
+            {
+              "text": "see",
+              "start": 4.321656,
+              "end": 4.782484
+            },
+            {
+              "text": "it.",
+              "start": 4.782484,
+              "end": 5.243313
+            }
+          ],
+          "wordTiming": "estimated"
+        }
+      ],
+      "triggers": [],
+      "sfx": [
+        {
+          "id": "C02:rumble#0",
+          "kind": "bed",
+          "cue": "C02",
+          "name": "rumble",
+          "src": "sfx/rumble.wav",
+          "start": 4,
+          "end": 6.5,
+          "offset": 0,
+          "envStart": 4,
+          "envEnd": 6.5,
+          "gainFrom": -40,
+          "gainTo": -20,
+          "fadeIn": 0.5,
+          "fadeOut": 0,
+          "pitch": 1,
+          "clear": null
+        }
+      ],
+      "notes": "Black. At 3.8 s a thin slit of light low in frame: the gap under a trailer, seen from underneath."
+    },
+    {
+      "id": "C03",
+      "part": "situation",
+      "scene": "roadtrain-side",
+      "synthetic": false,
+      "start": 6.5,
+      "end": 13.5,
+      "duration": 7,
+      "startFrame": 195,
+      "endFrame": 405,
+      "minDuration": 7,
+      "shot": 3,
+      "shotStart": 6.5,
+      "state": {
+        "kind": "roadtrain-side",
+        "sky": {
+          "from": "day",
+          "to": "day",
+          "start": 6.5,
+          "end": 13.5,
+          "mixFrom": 0,
+          "mixTo": 0
+        },
+        "cal": {
+          "pose": "under-trailer",
+          "move": "still"
+        },
+        "flash": {
+          "at": 12.383863,
+          "drain": null
+        },
+        "glassAt": null,
+        "jolt": null,
+        "dust": null
+      },
+      "lines": [
+        {
+          "index": 0,
+          "voice": "cal",
+          "text": "I was under the second trailer when the ground lit up white from underneath.",
+          "radio": false,
+          "start": 6.9,
+          "end": 13.351604,
+          "file": "voice/ep01/C03-0.wav",
+          "words": [
+            {
+              "text": "I",
+              "start": 6.9,
+              "end": 7.360829
+            },
+            {
+              "text": "was",
+              "start": 7.360829,
+              "end": 7.821658
+            },
+            {
+              "text": "under",
+              "start": 7.821658,
+              "end": 8.282487
+            },
+            {
+              "text": "the",
+              "start": 8.282487,
+              "end": 8.743315
+            },
+            {
+              "text": "second",
+              "start": 8.743315,
+              "end": 9.204144
+            },
+            {
+              "text": "trailer",
+              "start": 9.204144,
+              "end": 9.664973
+            },
+            {
+              "text": "when",
+              "start": 9.664973,
+              "end": 10.125802
+            },
+            {
+              "text": "the",
+              "start": 10.125802,
+              "end": 10.586631
+            },
+            {
+              "text": "ground",
+              "start": 10.586631,
+              "end": 11.04746
+            },
+            {
+              "text": "lit",
+              "start": 11.04746,
+              "end": 11.508289
+            },
+            {
+              "text": "up",
+              "start": 11.508289,
+              "end": 11.969118
+            },
+            {
+              "text": "white",
+              "start": 11.969118,
+              "end": 12.429946
+            },
+            {
+              "text": "from",
+              "start": 12.429946,
+              "end": 12.890775
+            },
+            {
+              "text": "underneath.",
+              "start": 12.890775,
+              "end": 13.351604
+            }
+          ],
+          "wordTiming": "estimated"
+        }
+      ],
+      "triggers": [
+        {
+          "id": "flash",
+          "word": "white",
+          "time": 12.383863,
+          "source": "fallback",
+          "hold": 0.9
+        }
+      ],
+      "sfx": [
+        {
+          "id": "C03:rumble#0",
+          "kind": "bed",
+          "cue": "C03",
+          "name": "rumble",
+          "src": "sfx/rumble.wav",
+          "start": 6.5,
+          "end": 12.383863,
+          "offset": 0,
+          "envStart": 6.5,
+          "envEnd": 12.383863,
+          "gainFrom": -20,
+          "gainTo": -8,
+          "fadeIn": 0,
+          "fadeOut": 0,
+          "pitch": 1,
+          "clear": null
+        }
+      ],
+      "notes": "The rumble peaks and cuts dead at the flash. The flash itself is silent."
+    },
+    {
+      "id": "C04",
+      "part": "situation",
+      "scene": "roadtrain-side",
+      "synthetic": false,
+      "start": 13.5,
+      "end": 18.5,
+      "duration": 5,
+      "startFrame": 405,
+      "endFrame": 555,
+      "minDuration": 5,
+      "shot": 3,
+      "shotStart": 6.5,
+      "state": {
+        "kind": "roadtrain-side",
+        "sky": {
+          "from": "drained",
+          "to": "drained",
+          "start": 13.5,
+          "end": 18.5,
+          "mixFrom": 0,
+          "mixTo": 0
+        },
+        "cal": {
+          "pose": "under-trailer",
+          "move": "still"
+        },
+        "flash": {
+          "at": 13.5,
+          "drain": 1.5
+        },
+        "glassAt": 14,
+        "jolt": {
+          "at": 16.5,
+          "duration": 0.5,
+          "px": 4
+        },
+        "dust": null
+      },
+      "lines": [
+        {
+          "index": 0,
+          "voice": "cal",
+          "text": "The windows went.",
+          "radio": false,
+          "start": 13.9,
+          "end": 15.282479,
+          "file": "voice/ep01/C04-0.wav",
+          "words": [
+            {
+              "text": "The",
+              "start": 13.9,
+              "end": 14.360826
+            },
+            {
+              "text": "windows",
+              "start": 14.360826,
+              "end": 14.821653
+            },
+            {
+              "text": "went.",
+              "start": 14.821653,
+              "end": 15.282479
+            }
+          ],
+          "wordTiming": "estimated"
+        }
+      ],
+      "triggers": [],
+      "sfx": [
+        {
+          "id": "C04:glass#0",
+          "kind": "sfx",
+          "cue": "C04",
+          "name": "glass",
+          "src": "sfx/glass.wav",
+          "start": 14,
+          "end": 15.9,
+          "offset": 0,
+          "envStart": 14,
+          "envEnd": 15.9,
+          "gainFrom": -8,
+          "gainTo": -8,
+          "fadeIn": 0,
+          "fadeOut": 0,
+          "pitch": 1,
+          "clear": null
+        },
+        {
+          "id": "C04:boom#0",
+          "kind": "sfx",
+          "cue": "C04",
+          "name": "boom",
+          "src": "sfx/boom.wav",
+          "start": 16.5,
+          "end": 21.1,
+          "offset": 0,
+          "envStart": 16.5,
+          "envEnd": 21.1,
+          "gainFrom": 0,
+          "gainTo": 0,
+          "fadeIn": 0,
+          "fadeOut": 0,
+          "pitch": 1,
+          "clear": null
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "C05",
+      "part": "situation",
+      "scene": "roadtrain-side",
+      "synthetic": false,
+      "start": 18.5,
+      "end": 24,
+      "duration": 5.5,
+      "startFrame": 555,
+      "endFrame": 720,
+      "minDuration": 5.5,
+      "shot": 3,
+      "shotStart": 6.5,
+      "state": {
+        "kind": "roadtrain-side",
+        "sky": {
+          "from": "drained",
+          "to": "drained",
+          "start": 13.5,
+          "end": 18.5,
+          "mixFrom": 0,
+          "mixTo": 0
+        },
+        "cal": {
+          "pose": "under-trailer",
+          "move": "still"
+        },
+        "flash": {
+          "at": 13.5,
+          "drain": 1.5
+        },
+        "glassAt": 14,
+        "jolt": {
+          "at": 16.5,
+          "duration": 0.5,
+          "px": 4
+        },
+        "dust": {
+          "drift": 20,
+          "since": 18.5
+        }
+      },
+      "lines": [
+        {
+          "index": 0,
+          "voice": "cal",
+          "text": "Then the sound came.",
+          "radio": false,
+          "start": 18.9,
+          "end": 20.436104,
+          "file": "voice/ep01/C05-0.wav",
+          "words": [
+            {
+              "text": "Then",
+              "start": 18.9,
+              "end": 19.284026
+            },
+            {
+              "text": "the",
+              "start": 19.284026,
+              "end": 19.668052
+            },
+            {
+              "text": "sound",
+              "start": 19.668052,
+              "end": 20.052078
+            },
+            {
+              "text": "came.",
+              "start": 20.052078,
+              "end": 20.436104
+            }
+          ],
+          "wordTiming": "estimated"
+        },
+        {
+          "index": 1,
+          "voice": "cal",
+          "text": "Then nothing, for a long time.",
+          "radio": false,
+          "start": 21.636104,
+          "end": 23.94025,
+          "file": "voice/ep01/C05-1.wav",
+          "words": [
+            {
+              "text": "Then",
+              "start": 21.636104,
+              "end": 22.020128
+            },
+            {
+              "text": "nothing,",
+              "start": 22.020128,
+              "end": 22.404153
+            },
+            {
+              "text": "for",
+              "start": 22.404153,
+              "end": 22.788177
+            },
+            {
+              "text": "a",
+              "start": 22.788177,
+              "end": 23.172201
+            },
+            {
+              "text": "long",
+              "start": 23.172201,
+              "end": 23.556226
+            },
+            {
+              "text": "time.",
+              "start": 23.556226,
+              "end": 23.94025
+            }
+          ],
+          "wordTiming": "estimated"
+        }
+      ],
+      "triggers": [],
+      "sfx": [
+        {
+          "id": "C05:ring#0",
+          "kind": "sfx",
+          "cue": "C05",
+          "name": "ring",
+          "src": "sfx/ring.wav",
+          "start": 16.5,
+          "end": 24,
+          "offset": 0,
+          "envStart": 16.5,
+          "envEnd": 24,
+          "gainFrom": -18,
+          "gainTo": -18,
+          "fadeIn": 0,
+          "fadeOut": 5.5,
+          "pitch": 1,
+          "clear": null
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "C06",
+      "part": "escalation",
+      "scene": "highway-walk",
+      "synthetic": false,
+      "start": 24,
+      "end": 30,
+      "duration": 6,
+      "startFrame": 720,
+      "endFrame": 900,
+      "minDuration": 6,
+      "shot": 4,
+      "shotStart": 24,
+      "state": {
+        "kind": "highway-walk",
+        "sky": {
+          "from": "drained",
+          "to": "drained",
+          "start": 24,
+          "end": 30,
+          "mixFrom": 0,
+          "mixTo": 0
+        },
+        "cars": 7,
+        "sun": true,
+        "smudge": true,
+        "cal": {
+          "move": "walk",
+          "since": 24,
+          "until": null
+        },
+        "hidden": {
+          "from": 28
+        },
+        "push": null
+      },
+      "lines": [
+        {
+          "index": 0,
+          "voice": "cal",
+          "text": "The highway was a line of stopped cars with the doors open.",
+          "radio": false,
+          "start": 24.4,
+          "end": 29.929958,
+          "file": "voice/ep01/C06-0.wav",
+          "words": [
+            {
+              "text": "The",
+              "start": 24.4,
+              "end": 24.86083
+            },
+            {
+              "text": "highway",
+              "start": 24.86083,
+              "end": 25.32166
+            },
+            {
+              "text": "was",
+              "start": 25.32166,
+              "end": 25.78249
+            },
+            {
+              "text": "a",
+              "start": 25.78249,
+              "end": 26.243319
+            },
+            {
+              "text": "line",
+              "start": 26.243319,
+              "end": 26.704149
+            },
+            {
+              "text": "of",
+              "start": 26.704149,
+              "end": 27.164979
+            },
+            {
+              "text": "stopped",
+              "start": 27.164979,
+              "end": 27.625809
+            },
+            {
+              "text": "cars",
+              "start": 27.625809,
+              "end": 28.086639
+            },
+            {
+              "text": "with",
+              "start": 28.086639,
+              "end": 28.547469
+            },
+            {
+              "text": "the",
+              "start": 28.547469,
+              "end": 29.008299
+            },
+            {
+              "text": "doors",
+              "start": 29.008299,
+              "end": 29.469128
+            },
+            {
+              "text": "open.",
+              "start": 29.469128,
+              "end": 29.929958
+            }
+          ],
+          "wordTiming": "estimated"
+        }
+      ],
+      "triggers": [],
+      "sfx": [
+        {
+          "id": "C06:footstep#0",
+          "kind": "sfx",
+          "cue": "C06",
+          "name": "footstep",
+          "src": "sfx/footstep.wav",
+          "start": 24,
+          "end": 24.32,
+          "offset": 0,
+          "envStart": 24,
+          "envEnd": 24.32,
+          "gainFrom": -10,
+          "gainTo": -10,
+          "fadeIn": 0,
+          "fadeOut": 0,
+          "pitch": 1,
+          "clear": null
+        },
+        {
+          "id": "C06:footstep#1",
+          "kind": "sfx",
+          "cue": "C06",
+          "name": "footstep",
+          "src": "sfx/footstep.wav",
+          "start": 24.8,
+          "end": 25.12,
+          "offset": 0,
+          "envStart": 24.8,
+          "envEnd": 25.12,
+          "gainFrom": -10,
+          "gainTo": -10,
+          "fadeIn": 0,
+          "fadeOut": 0,
+          "pitch": 1,
+          "clear": null
+        },
+        {
+          "id": "C06:footstep#2",
+          "kind": "sfx",
+          "cue": "C06",
+          "name": "footstep",
+          "src": "sfx/footstep.wav",
+          "start": 25.6,
+          "end": 25.92,
+          "offset": 0,
+          "envStart": 25.6,
+          "envEnd": 25.92,
+          "gainFrom": -10,
+          "gainTo": -10,
+          "fadeIn": 0,
+          "fadeOut": 0,
+          "pitch": 1,
+          "clear": null
+        },
+        {
+          "id": "C06:footstep#3",
+          "kind": "sfx",
+          "cue": "C06",
+          "name": "footstep",
+          "src": "sfx/footstep.wav",
+          "start": 26.4,
+          "end": 26.72,
+          "offset": 0,
+          "envStart": 26.4,
+          "envEnd": 26.72,
+          "gainFrom": -10,
+          "gainTo": -10,
+          "fadeIn": 0,
+          "fadeOut": 0,
+          "pitch": 1,
+          "clear": null
+        },
+        {
+          "id": "C06:footstep#4",
+          "kind": "sfx",
+          "cue": "C06",
+          "name": "footstep",
+          "src": "sfx/footstep.wav",
+          "start": 27.2,
+          "end": 27.52,
+          "offset": 0,
+          "envStart": 27.2,
+          "envEnd": 27.52,
+          "gainFrom": -10,
+          "gainTo": -10,
+          "fadeIn": 0,
+          "fadeOut": 0,
+          "pitch": 1,
+          "clear": null
+        },
+        {
+          "id": "C06:footstep#5",
+          "kind": "sfx",
+          "cue": "C06",
+          "name": "footstep",
+          "src": "sfx/footstep.wav",
+          "start": 28,
+          "end": 28.32,
+          "offset": 0,
+          "envStart": 28,
+          "envEnd": 28.32,
+          "gainFrom": -10,
+          "gainTo": -10,
+          "fadeIn": 0,
+          "fadeOut": 0,
+          "pitch": 1,
+          "clear": null
+        },
+        {
+          "id": "C06:footstep#6",
+          "kind": "sfx",
+          "cue": "C06",
+          "name": "footstep",
+          "src": "sfx/footstep.wav",
+          "start": 28.8,
+          "end": 29.12,
+          "offset": 0,
+          "envStart": 28.8,
+          "envEnd": 29.12,
+          "gainFrom": -10,
+          "gainTo": -10,
+          "fadeIn": 0,
+          "fadeOut": 0,
+          "pitch": 1,
+          "clear": null
+        },
+        {
+          "id": "C06:footstep#7",
+          "kind": "sfx",
+          "cue": "C06",
+          "name": "footstep",
+          "src": "sfx/footstep.wav",
+          "start": 29.6,
+          "end": 29.92,
+          "offset": 0,
+          "envStart": 29.6,
+          "envEnd": 29.92,
+          "gainFrom": -10,
+          "gainTo": -10,
+          "fadeIn": 0,
+          "fadeOut": 0,
+          "pitch": 1,
+          "clear": null
+        },
+        {
+          "id": "C06:wind#0",
+          "kind": "bed",
+          "cue": "C06",
+          "name": "wind",
+          "src": "sfx/wind.wav",
+          "start": 24,
+          "end": 30,
+          "offset": 0,
+          "envStart": 24,
+          "envEnd": 30,
+          "gainFrom": -20,
+          "gainTo": -20,
+          "fadeIn": 0.5,
+          "fadeOut": 0,
+          "pitch": 1,
+          "clear": null
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "C07",
+      "part": "escalation",
+      "scene": "highway-walk",
+      "synthetic": false,
+      "start": 30,
+      "end": 35,
+      "duration": 5,
+      "startFrame": 900,
+      "endFrame": 1050,
+      "minDuration": 5,
+      "shot": 4,
+      "shotStart": 24,
+      "state": {
+        "kind": "highway-walk",
+        "sky": {
+          "from": "drained",
+          "to": "drained",
+          "start": 24,
+          "end": 30,
+          "mixFrom": 0,
+          "mixTo": 0
+        },
+        "cars": 7,
+        "sun": true,
+        "smudge": true,
+        "cal": {
+          "move": "walk",
+          "since": 24,
+          "until": 31
+        },
+        "hidden": {
+          "from": 28
+        },
+        "push": {
+          "start": 30,
+          "end": 35,
+          "from": 1,
+          "to": 1.06
+        }
+      },
+      "lines": [
+        {
+          "index": 0,
+          "voice": "cal",
+          "text": "Nobody in them.",
+          "radio": false,
+          "start": 30.4,
+          "end": 31.782479,
+          "file": "voice/ep01/C07-0.wav",
+          "words": [
+            {
+              "text": "Nobody",
+              "start": 30.4,
+              "end": 30.860826
+            },
+            {
+              "text": "in",
+              "start": 30.860826,
+              "end": 31.321653
+            },
+            {
+              "text": "them.",
+              "start": 31.321653,
+              "end": 31.782479
+            }
+          ],
+          "wordTiming": "estimated"
+        },
+        {
+          "index": 1,
+          "voice": "cal",
+          "text": "Nobody anywhere.",
+          "radio": false,
+          "start": 33.282479,
+          "end": 34.204146,
+          "file": "voice/ep01/C07-1.wav",
+          "words": [
+            {
+              "text": "Nobody",
+              "start": 33.282479,
+              "end": 33.743312
+            },
+            {
+              "text": "anywhere.",
+              "start": 33.743312,
+              "end": 34.204146
+            }
+          ],
+          "wordTiming": "estimated"
+        }
+      ],
+      "triggers": [],
+      "sfx": [
+        {
+          "id": "C07:footstep#0",
+          "kind": "sfx",
+          "cue": "C07",
+          "name": "footstep",
+          "src": "sfx/footstep.wav",
+          "start": 30.4,
+          "end": 30.72,
+          "offset": 0,
+          "envStart": 30.4,
+          "envEnd": 30.72,
+          "gainFrom": -10,
+          "gainTo": -10,
+          "fadeIn": 0,
+          "fadeOut": 0,
+          "pitch": 1,
+          "clear": null
+        },
+        {
+          "id": "C07:wind#0",
+          "kind": "bed",
+          "cue": "C07",
+          "name": "wind",
+          "src": "sfx/wind.wav",
+          "start": 30,
+          "end": 35,
+          "offset": 0,
+          "envStart": 30,
+          "envEnd": 35,
+          "gainFrom": -20,
+          "gainTo": -20,
+          "fadeIn": 0,
+          "fadeOut": 0,
+          "pitch": 1,
+          "clear": null
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "C08",
+      "part": "escalation",
+      "scene": "cab-interior",
+      "synthetic": false,
+      "start": 35,
+      "end": 39,
+      "duration": 4,
+      "startFrame": 1050,
+      "endFrame": 1170,
+      "minDuration": 4,
+      "shot": 5,
+      "shotStart": 35,
+      "state": {
+        "kind": "cab-interior",
+        "sky": {
+          "from": "drained",
+          "to": "dusk",
+          "start": 35,
+          "end": 39,
+          "mixFrom": 0,
+          "mixTo": 1
+        },
+        "sun": {
+          "from": "touching",
+          "to": "touching",
+          "start": 35,
+          "end": 39
+        },
+        "radio": {
+          "on": 38.5,
+          "off": null,
+          "words": []
+        }
+      },
+      "lines": [
+        {
+          "index": 0,
+          "voice": "cal",
+          "text": "At last light, the radio found a voice.",
+          "radio": false,
+          "start": 35.4,
+          "end": 38.911083,
+          "file": "voice/ep01/C08-0.wav",
+          "words": [
+            {
+              "text": "At",
+              "start": 35.4,
+              "end": 35.838885
+            },
+            {
+              "text": "last",
+              "start": 35.838885,
+              "end": 36.277771
+            },
+            {
+              "text": "light,",
+              "start": 36.277771,
+              "end": 36.716656
+            },
+            {
+              "text": "the",
+              "start": 36.716656,
+              "end": 37.155542
+            },
+            {
+              "text": "radio",
+              "start": 37.155542,
+              "end": 37.594427
+            },
+            {
+              "text": "found",
+              "start": 37.594427,
+              "end": 38.033313
+            },
+            {
+              "text": "a",
+              "start": 38.033313,
+              "end": 38.472198
+            },
+            {
+              "text": "voice.",
+              "start": 38.472198,
+              "end": 38.911083
+            }
+          ],
+          "wordTiming": "estimated"
+        }
+      ],
+      "triggers": [],
+      "sfx": [
+        {
+          "id": "C08:static-sweep#0",
+          "kind": "sfx",
+          "cue": "C08",
+          "name": "static-sweep",
+          "src": "sfx/static-sweep.wav",
+          "start": 38.5,
+          "end": 39.2,
+          "offset": 0,
+          "envStart": 38.5,
+          "envEnd": 39.2,
+          "gainFrom": -14,
+          "gainTo": -14,
+          "fadeIn": 0,
+          "fadeOut": 0,
+          "pitch": 1,
+          "clear": null
+        },
+        {
+          "id": "C08:click#0",
+          "kind": "sfx",
+          "cue": "C08",
+          "name": "click",
+          "src": "sfx/click.wav",
+          "start": 39,
+          "end": 39.06,
+          "offset": 0,
+          "envStart": 39,
+          "envEnd": 39.06,
+          "gainFrom": -14,
+          "gainTo": -14,
+          "fadeIn": 0,
+          "fadeOut": 0,
+          "pitch": 1,
+          "clear": null
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "C09",
+      "part": "escalation",
+      "scene": "cab-interior",
+      "synthetic": false,
+      "start": 39,
+      "end": 48,
+      "duration": 9,
+      "startFrame": 1170,
+      "endFrame": 1440,
+      "minDuration": 9,
+      "shot": 5,
+      "shotStart": 35,
+      "state": {
+        "kind": "cab-interior",
+        "sky": {
+          "from": "dusk",
+          "to": "night",
+          "start": 39,
+          "end": 48,
+          "mixFrom": 0,
+          "mixTo": 0.25
+        },
+        "sun": {
+          "from": "touching",
+          "to": "below",
+          "start": 39,
+          "end": 48
+        },
+        "radio": {
+          "on": 39,
+          "off": null,
+          "words": [
+            {
+              "start": 39.4,
+              "end": 39.730579
+            },
+            {
+              "start": 39.730579,
+              "end": 40.061157
+            },
+            {
+              "start": 40.061157,
+              "end": 40.391736
+            },
+            {
+              "start": 40.391736,
+              "end": 40.722314
+            },
+            {
+              "start": 40.722314,
+              "end": 41.052893
+            },
+            {
+              "start": 41.052893,
+              "end": 41.383471
+            },
+            {
+              "start": 41.383471,
+              "end": 41.71405
+            },
+            {
+              "start": 41.71405,
+              "end": 42.044628
+            },
+            {
+              "start": 42.044628,
+              "end": 42.375207
+            },
+            {
+              "start": 42.375207,
+              "end": 42.705785
+            },
+            {
+              "start": 42.705785,
+              "end": 43.036364
+            },
+            {
+              "start": 43.036364,
+              "end": 43.366942
+            },
+            {
+              "start": 43.366942,
+              "end": 43.697521
+            },
+            {
+              "start": 43.697521,
+              "end": 44.028099
+            },
+            {
+              "start": 44.028099,
+              "end": 44.358678
+            },
+            {
+              "start": 44.358678,
+              "end": 44.689256
+            },
+            {
+              "start": 44.689256,
+              "end": 45.019835
+            },
+            {
+              "start": 45.019835,
+              "end": 45.350413
+            },
+            {
+              "start": 45.350413,
+              "end": 45.680992
+            },
+            {
+              "start": 45.680992,
+              "end": 46.011571
+            },
+            {
+              "start": 46.011571,
+              "end": 46.342149
+            },
+            {
+              "start": 46.342149,
+              "end": 46.672728
+            },
+            {
+              "start": 46.672728,
+              "end": 47.003306
+            },
+            {
+              "start": 47.003306,
+              "end": 47.333885
+            },
+            {
+              "start": 47.333885,
+              "end": 47.664463
+            },
+            {
+              "start": 47.664463,
+              "end": 47.995042
+            }
+          ]
+        }
+      },
+      "lines": [
+        {
+          "index": 0,
+          "voice": "authority",
+          "text": "Northern Recovery Authority. Aircraft will not land for fewer than ten. Gather. Report your number on channel seven at last light. Do not travel after dark.",
+          "radio": true,
+          "start": 39.4,
+          "end": 47.995042,
+          "file": "voice/ep01/C09-0.radio.wav",
+          "words": [
+            {
+              "text": "Northern",
+              "start": 39.4,
+              "end": 39.730579
+            },
+            {
+              "text": "Recovery",
+              "start": 39.730579,
+              "end": 40.061157
+            },
+            {
+              "text": "Authority.",
+              "start": 40.061157,
+              "end": 40.391736
+            },
+            {
+              "text": "Aircraft",
+              "start": 40.391736,
+              "end": 40.722314
+            },
+            {
+              "text": "will",
+              "start": 40.722314,
+              "end": 41.052893
+            },
+            {
+              "text": "not",
+              "start": 41.052893,
+              "end": 41.383471
+            },
+            {
+              "text": "land",
+              "start": 41.383471,
+              "end": 41.71405
+            },
+            {
+              "text": "for",
+              "start": 41.71405,
+              "end": 42.044628
+            },
+            {
+              "text": "fewer",
+              "start": 42.044628,
+              "end": 42.375207
+            },
+            {
+              "text": "than",
+              "start": 42.375207,
+              "end": 42.705785
+            },
+            {
+              "text": "ten.",
+              "start": 42.705785,
+              "end": 43.036364
+            },
+            {
+              "text": "Gather.",
+              "start": 43.036364,
+              "end": 43.366942
+            },
+            {
+              "text": "Report",
+              "start": 43.366942,
+              "end": 43.697521
+            },
+            {
+              "text": "your",
+              "start": 43.697521,
+              "end": 44.028099
+            },
+            {
+              "text": "number",
+              "start": 44.028099,
+              "end": 44.358678
+            },
+            {
+              "text": "on",
+              "start": 44.358678,
+              "end": 44.689256
+            },
+            {
+              "text": "channel",
+              "start": 44.689256,
+              "end": 45.019835
+            },
+            {
+              "text": "seven",
+              "start": 45.019835,
+              "end": 45.350413
+            },
+            {
+              "text": "at",
+              "start": 45.350413,
+              "end": 45.680992
+            },
+            {
+              "text": "last",
+              "start": 45.680992,
+              "end": 46.011571
+            },
+            {
+              "text": "light.",
+              "start": 46.011571,
+              "end": 46.342149
+            },
+            {
+              "text": "Do",
+              "start": 46.342149,
+              "end": 46.672728
+            },
+            {
+              "text": "not",
+              "start": 46.672728,
+              "end": 47.003306
+            },
+            {
+              "text": "travel",
+              "start": 47.003306,
+              "end": 47.333885
+            },
+            {
+              "text": "after",
+              "start": 47.333885,
+              "end": 47.664463
+            },
+            {
+              "text": "dark.",
+              "start": 47.664463,
+              "end": 47.995042
+            }
+          ],
+          "wordTiming": "estimated"
+        }
+      ],
+      "triggers": [],
+      "sfx": [
+        {
+          "id": "C09:static-bed#0",
+          "kind": "bed",
+          "cue": "C09",
+          "name": "static-bed",
+          "src": "sfx/static-bed.wav",
+          "start": 39,
+          "end": 48,
+          "offset": 0,
+          "envStart": 39,
+          "envEnd": 48,
+          "gainFrom": -26,
+          "gainTo": -26,
+          "fadeIn": 0,
+          "fadeOut": 0,
+          "pitch": 1,
+          "clear": null
+        },
+        {
+          "id": "C09:click#0",
+          "kind": "sfx",
+          "cue": "C09",
+          "name": "click",
+          "src": "sfx/click.wav",
+          "start": 48,
+          "end": 48.06,
+          "offset": 0,
+          "envStart": 48,
+          "envEnd": 48.06,
+          "gainFrom": -14,
+          "gainTo": -14,
+          "fadeIn": 0,
+          "fadeOut": 0,
+          "pitch": 1,
+          "clear": null
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "C10",
+      "part": "escalation",
+      "scene": "cab-interior",
+      "synthetic": false,
+      "start": 48,
+      "end": 52,
+      "duration": 4,
+      "startFrame": 1440,
+      "endFrame": 1560,
+      "minDuration": 4,
+      "shot": 5,
+      "shotStart": 35,
+      "state": {
+        "kind": "cab-interior",
+        "sky": {
+          "from": "dusk",
+          "to": "night",
+          "start": 48,
+          "end": 52,
+          "mixFrom": 0.25,
+          "mixTo": 1
+        },
+        "sun": {
+          "from": "below",
+          "to": "below",
+          "start": 48,
+          "end": 52
+        },
+        "radio": {
+          "on": 48,
+          "off": 51.964979,
+          "words": []
+        }
+      },
+      "lines": [
+        {
+          "index": 0,
+          "voice": "cal",
+          "text": "It said it again.",
+          "radio": false,
+          "start": 48.4,
+          "end": 50.243313,
+          "file": "voice/ep01/C10-0.wav",
+          "words": [
+            {
+              "text": "It",
+              "start": 48.4,
+              "end": 48.860828
+            },
+            {
+              "text": "said",
+              "start": 48.860828,
+              "end": 49.321656
+            },
+            {
+              "text": "it",
+              "start": 49.321656,
+              "end": 49.782484
+            },
+            {
+              "text": "again.",
+              "start": 49.782484,
+              "end": 50.243313
+            }
+          ],
+          "wordTiming": "estimated"
+        },
+        {
+          "index": 1,
+          "voice": "cal",
+          "text": "And again.",
+          "radio": false,
+          "start": 51.043313,
+          "end": 51.964979,
+          "file": "voice/ep01/C10-1.wav",
+          "words": [
+            {
+              "text": "And",
+              "start": 51.043313,
+              "end": 51.504146
+            },
+            {
+              "text": "again.",
+              "start": 51.504146,
+              "end": 51.964979
+            }
+          ],
+          "wordTiming": "estimated"
+        }
+      ],
+      "triggers": [],
+      "sfx": [
+        {
+          "id": "C10:C09#0#0",
+          "kind": "clip",
+          "cue": "C10",
+          "name": "C09#0",
+          "src": "voice/ep01/C09-0.radio.wav",
+          "start": 48,
+          "end": 51.964979,
+          "offset": 0,
+          "envStart": 48,
+          "envEnd": 51.964979,
+          "gainFrom": -6,
+          "gainTo": -6,
+          "fadeIn": 0,
+          "fadeOut": 0,
+          "pitch": 1,
+          "clear": null
+        },
+        {
+          "id": "C10:click#0",
+          "kind": "sfx",
+          "cue": "C10",
+          "name": "click",
+          "src": "sfx/click.wav",
+          "start": 51.964979,
+          "end": 52.024979,
+          "offset": 0,
+          "envStart": 51.964979,
+          "envEnd": 52.024979,
+          "gainFrom": -14,
+          "gainTo": -14,
+          "fadeIn": 0,
+          "fadeOut": 0,
+          "pitch": 1,
+          "clear": null
+        }
+      ],
+      "notes": "The loop restarts under the narration at half volume and is cut by a click as the line ends."
+    },
+    {
+      "id": "C11",
+      "part": "climax",
+      "scene": "cab-exterior-night",
+      "synthetic": false,
+      "start": 52,
+      "end": 56,
+      "duration": 4,
+      "startFrame": 1560,
+      "endFrame": 1680,
+      "minDuration": 4,
+      "shot": 6,
+      "shotStart": 52,
+      "state": {
+        "kind": "cab-exterior-night",
+        "windowLit": true,
+        "windowOff": null,
+        "cal": {
+          "pose": "lying",
+          "upAt": null
+        },
+        "shakes": [],
+        "dawnFrom": null,
+        "printFrom": null,
+        "blackAt": null
+      },
+      "lines": [
+        {
+          "index": 0,
+          "voice": "cal",
+          "text": "I turned it off.",
+          "radio": false,
+          "start": 52.4,
+          "end": 53.936104,
+          "file": "voice/ep01/C11-0.wav",
+          "words": [
+            {
+              "text": "I",
+              "start": 52.4,
+              "end": 52.784026
+            },
+            {
+              "text": "turned",
+              "start": 52.784026,
+              "end": 53.168052
+            },
+            {
+              "text": "it",
+              "start": 53.168052,
+              "end": 53.552078
+            },
+            {
+              "text": "off.",
+              "start": 53.552078,
+              "end": 53.936104
+            }
+          ],
+          "wordTiming": "estimated"
+        },
+        {
+          "index": 1,
+          "voice": "cal",
+          "text": "I didn't sleep.",
+          "radio": false,
+          "start": 54.736104,
+          "end": 55.888187,
+          "file": "voice/ep01/C11-1.wav",
+          "words": [
+            {
+              "text": "I",
+              "start": 54.736104,
+              "end": 55.120132
+            },
+            {
+              "text": "didn't",
+              "start": 55.120132,
+              "end": 55.50416
+            },
+            {
+              "text": "sleep.",
+              "start": 55.50416,
+              "end": 55.888187
+            }
+          ],
+          "wordTiming": "estimated"
+        }
+      ],
+      "triggers": [],
+      "sfx": [
+        {
+          "id": "C11:drone#0",
+          "kind": "bed",
+          "cue": "C11",
+          "name": "drone",
+          "src": "sfx/drone.wav",
+          "start": 52,
+          "end": 56,
+          "offset": 0,
+          "envStart": 52,
+          "envEnd": 56,
+          "gainFrom": -14,
+          "gainTo": -14,
+          "fadeIn": 2,
+          "fadeOut": 0,
+          "pitch": 1,
+          "clear": null
+        },
+        {
+          "id": "C11:wind#0",
+          "kind": "bed",
+          "cue": "C11",
+          "name": "wind",
+          "src": "sfx/wind.wav",
+          "start": 52,
+          "end": 56,
+          "offset": 0,
+          "envStart": 52,
+          "envEnd": 56,
+          "gainFrom": -22,
+          "gainTo": -22,
+          "fadeIn": 0,
+          "fadeOut": 0,
+          "pitch": 1,
+          "clear": null
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "C12",
+      "part": "climax",
+      "scene": "cab-exterior-night",
+      "synthetic": false,
+      "start": 56,
+      "end": 61.5,
+      "duration": 5.5,
+      "startFrame": 1680,
+      "endFrame": 1845,
+      "minDuration": 5.5,
+      "shot": 6,
+      "shotStart": 52,
+      "state": {
+        "kind": "cab-exterior-night",
+        "windowLit": true,
+        "windowOff": 59.4,
+        "cal": {
+          "pose": "lying",
+          "upAt": 58.2
+        },
+        "shakes": [
+          58,
+          59.4,
+          61
+        ],
+        "dawnFrom": null,
+        "printFrom": null,
+        "blackAt": null
+      },
+      "lines": [],
+      "triggers": [],
+      "sfx": [
+        {
+          "id": "C12:bang#0",
+          "kind": "sfx",
+          "cue": "C12",
+          "name": "bang",
+          "src": "sfx/bang.wav",
+          "start": 58,
+          "end": 59.5,
+          "offset": 0,
+          "envStart": 58,
+          "envEnd": 59.5,
+          "gainFrom": -2,
+          "gainTo": -2,
+          "fadeIn": 0,
+          "fadeOut": 0,
+          "pitch": 0.9817023960966617,
+          "clear": 1
+        },
+        {
+          "id": "C12:bang#1",
+          "kind": "sfx",
+          "cue": "C12",
+          "name": "bang",
+          "src": "sfx/bang.wav",
+          "start": 59.4,
+          "end": 60.9,
+          "offset": 0,
+          "envStart": 59.4,
+          "envEnd": 60.9,
+          "gainFrom": -2,
+          "gainTo": -2,
+          "fadeIn": 0,
+          "fadeOut": 0,
+          "pitch": 0.988769865296781,
+          "clear": 1
+        },
+        {
+          "id": "C12:bang#2",
+          "kind": "sfx",
+          "cue": "C12",
+          "name": "bang",
+          "src": "sfx/bang.wav",
+          "start": 61,
+          "end": 62.5,
+          "offset": 0,
+          "envStart": 61,
+          "envEnd": 62.5,
+          "gainFrom": -2,
+          "gainTo": -2,
+          "fadeIn": 0,
+          "fadeOut": 0,
+          "pitch": 0.9858494785055518,
+          "clear": 1
+        },
+        {
+          "id": "C12:drone#0",
+          "kind": "bed",
+          "cue": "C12",
+          "name": "drone",
+          "src": "sfx/drone.wav",
+          "start": 56,
+          "end": 61.5,
+          "offset": 0,
+          "envStart": 56,
+          "envEnd": 61.5,
+          "gainFrom": -14,
+          "gainTo": -14,
+          "fadeIn": 0,
+          "fadeOut": 0,
+          "pitch": 1,
+          "clear": null
+        }
+      ],
+      "notes": "No narration, by design. The bangs sit in silence and the drone; nothing else moves."
+    },
+    {
+      "id": "C13",
+      "part": "climax",
+      "scene": "cab-exterior-night",
+      "synthetic": false,
+      "start": 61.5,
+      "end": 65,
+      "duration": 3.5,
+      "startFrame": 1845,
+      "endFrame": 1950,
+      "minDuration": 3.5,
+      "shot": 6,
+      "shotStart": 52,
+      "state": {
+        "kind": "cab-exterior-night",
+        "windowLit": true,
+        "windowOff": 59.4,
+        "cal": {
+          "pose": "lying",
+          "upAt": 58.2
+        },
+        "shakes": [
+          58,
+          59.4,
+          61
+        ],
+        "dawnFrom": null,
+        "printFrom": null,
+        "blackAt": null
+      },
+      "lines": [
+        {
+          "index": 0,
+          "voice": "cal",
+          "text": "I didn't open it.",
+          "radio": false,
+          "start": 62.1,
+          "end": 63.943313,
+          "file": "voice/ep01/C13-0.wav",
+          "words": [
+            {
+              "text": "I",
+              "start": 62.1,
+              "end": 62.560828
+            },
+            {
+              "text": "didn't",
+              "start": 62.560828,
+              "end": 63.021656
+            },
+            {
+              "text": "open",
+              "start": 63.021656,
+              "end": 63.482484
+            },
+            {
+              "text": "it.",
+              "start": 63.482484,
+              "end": 63.943313
+            }
+          ],
+          "wordTiming": "estimated"
+        }
+      ],
+      "triggers": [],
+      "sfx": [
+        {
+          "id": "C13:drone#0",
+          "kind": "bed",
+          "cue": "C13",
+          "name": "drone",
+          "src": "sfx/drone.wav",
+          "start": 61.5,
+          "end": 65,
+          "offset": 0,
+          "envStart": 61.5,
+          "envEnd": 65,
+          "gainFrom": -14,
+          "gainTo": -14,
+          "fadeIn": 0,
+          "fadeOut": 0,
+          "pitch": 1,
+          "clear": null
+        },
+        {
+          "id": "C13:wind#0",
+          "kind": "bed",
+          "cue": "C13",
+          "name": "wind",
+          "src": "sfx/wind.wav",
+          "start": 61.5,
+          "end": 65,
+          "offset": 0,
+          "envStart": 61.5,
+          "envEnd": 65,
+          "gainFrom": -22,
+          "gainTo": -22,
+          "fadeIn": 0,
+          "fadeOut": 0,
+          "pitch": 1,
+          "clear": null
+        }
+      ],
+      "notes": "Narration waits 0.6 s, not 0.4, so it clears the third bang by more than a second."
+    },
+    {
+      "id": "C14",
+      "part": "sting",
+      "scene": "cab-exterior-night",
+      "synthetic": false,
+      "start": 65,
+      "end": 69,
+      "duration": 4,
+      "startFrame": 1950,
+      "endFrame": 2070,
+      "minDuration": 4,
+      "shot": 6,
+      "shotStart": 52,
+      "state": {
+        "kind": "cab-exterior-night",
+        "windowLit": true,
+        "windowOff": 59.4,
+        "cal": {
+          "pose": "lying",
+          "upAt": 58.2
+        },
+        "shakes": [
+          58,
+          59.4,
+          61
+        ],
+        "dawnFrom": 65,
+        "printFrom": 65,
+        "blackAt": null
+      },
+      "lines": [
+        {
+          "index": 0,
+          "voice": "cal",
+          "text": "The message said: don't travel after dark.",
+          "radio": false,
+          "start": 65.4,
+          "end": 68.625813,
+          "file": "voice/ep01/C14-0.wav",
+          "words": [
+            {
+              "text": "The",
+              "start": 65.4,
+              "end": 65.86083
+            },
+            {
+              "text": "message",
+              "start": 65.86083,
+              "end": 66.321661
+            },
+            {
+              "text": "said:",
+              "start": 66.321661,
+              "end": 66.782491
+            },
+            {
+              "text": "don't",
+              "start": 66.782491,
+              "end": 67.243321
+            },
+            {
+              "text": "travel",
+              "start": 67.243321,
+              "end": 67.704152
+            },
+            {
+              "text": "after",
+              "start": 67.704152,
+              "end": 68.164982
+            },
+            {
+              "text": "dark.",
+              "start": 68.164982,
+              "end": 68.625813
+            }
+          ],
+          "wordTiming": "estimated"
+        }
+      ],
+      "triggers": [],
+      "sfx": [
+        {
+          "id": "C14:drone#0",
+          "kind": "bed",
+          "cue": "C14",
+          "name": "drone",
+          "src": "sfx/drone.wav",
+          "start": 65,
+          "end": 68.5,
+          "offset": 0,
+          "envStart": 65,
+          "envEnd": 68.5,
+          "gainFrom": -14,
+          "gainTo": -14,
+          "fadeIn": 0,
+          "fadeOut": 3.5,
+          "pitch": 1,
+          "clear": null
+        },
+        {
+          "id": "C14:wind#0",
+          "kind": "bed",
+          "cue": "C14",
+          "name": "wind",
+          "src": "sfx/wind.wav",
+          "start": 65,
+          "end": 69,
+          "offset": 0,
+          "envStart": 65,
+          "envEnd": 69,
+          "gainFrom": -22,
+          "gainTo": -22,
+          "fadeIn": 0,
+          "fadeOut": 0,
+          "pitch": 1,
+          "clear": null
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "C15",
+      "part": "sting",
+      "scene": "cab-exterior-night",
+      "synthetic": false,
+      "start": 69,
+      "end": 72,
+      "duration": 3,
+      "startFrame": 2070,
+      "endFrame": 2160,
+      "minDuration": 3,
+      "shot": 6,
+      "shotStart": 52,
+      "state": {
+        "kind": "cab-exterior-night",
+        "windowLit": true,
+        "windowOff": 59.4,
+        "cal": {
+          "pose": "lying",
+          "upAt": 58.2
+        },
+        "shakes": [
+          58,
+          59.4,
+          61
+        ],
+        "dawnFrom": 65,
+        "printFrom": 65,
+        "blackAt": 71.566816
+      },
+      "lines": [
+        {
+          "index": 0,
+          "voice": "cal",
+          "text": "It didn't say why.",
+          "radio": false,
+          "start": 70,
+          "end": 71.843313,
+          "file": "voice/ep01/C15-0.wav",
+          "words": [
+            {
+              "text": "It",
+              "start": 70,
+              "end": 70.460828
+            },
+            {
+              "text": "didn't",
+              "start": 70.460828,
+              "end": 70.921656
+            },
+            {
+              "text": "say",
+              "start": 70.921656,
+              "end": 71.382484
+            },
+            {
+              "text": "why.",
+              "start": 71.382484,
+              "end": 71.843313
+            }
+          ],
+          "wordTiming": "estimated"
+        }
+      ],
+      "triggers": [
+        {
+          "id": "black",
+          "word": "why",
+          "time": 71.566816,
+          "source": "fallback",
+          "hold": 0
+        }
+      ],
+      "sfx": [
+        {
+          "id": "C15:click#0",
+          "kind": "sfx",
+          "cue": "C15",
+          "name": "click",
+          "src": "sfx/click.wav",
+          "start": 71.566816,
+          "end": 71.626816,
+          "offset": 0,
+          "envStart": 71.566816,
+          "envEnd": 71.626816,
+          "gainFrom": -14,
+          "gainTo": -14,
+          "fadeIn": 0,
+          "fadeOut": 0,
+          "pitch": 1,
+          "clear": null
+        }
+      ],
+      "notes": "Hold, then cut to black on the last word."
+    },
+    {
+      "id": "C16",
+      "part": "end",
+      "scene": "end-card",
+      "synthetic": false,
+      "start": 72,
+      "end": 73.5,
+      "duration": 1.5,
+      "startFrame": 2160,
+      "endFrame": 2205,
+      "minDuration": 1.5,
+      "shot": 7,
+      "shotStart": 72,
+      "state": {
+        "kind": "end-card",
+        "marks": 1,
+        "struck": [],
+        "fadeStart": 72,
+        "fadeEnd": 73.5
+      },
+      "lines": [],
+      "triggers": [],
+      "sfx": [],
+      "notes": null
+    }
+  ],
+  "audio": [
+    {
+      "id": "C01:line0",
+      "kind": "voice",
+      "cue": "C01",
+      "name": "C01#0",
+      "src": "voice/ep01/C01-0.wav",
+      "start": 0.4,
+      "end": 2.243313,
+      "offset": 0,
+      "envStart": 0.4,
+      "envEnd": 2.243313,
+      "gainFrom": 0,
+      "gainTo": 0,
+      "fadeIn": 0,
+      "fadeOut": 0,
+      "pitch": 1,
+      "clear": null
+    },
+    {
+      "id": "C01:click#0",
+      "kind": "sfx",
+      "cue": "C01",
+      "name": "click",
+      "src": "sfx/click.wav",
+      "start": 0,
+      "end": 0.06,
+      "offset": 0,
+      "envStart": 0,
+      "envEnd": 0.06,
+      "gainFrom": -14,
+      "gainTo": -14,
+      "fadeIn": 0,
+      "fadeOut": 0,
+      "pitch": 1,
+      "clear": null
+    },
+    {
+      "id": "C02:line0",
+      "kind": "voice",
+      "cue": "C02",
+      "name": "C02#0",
+      "src": "voice/ep01/C02-0.wav",
+      "start": 3.4,
+      "end": 5.243313,
+      "offset": 0,
+      "envStart": 3.4,
+      "envEnd": 5.243313,
+      "gainFrom": 0,
+      "gainTo": 0,
+      "fadeIn": 0,
+      "fadeOut": 0,
+      "pitch": 1,
+      "clear": null
+    },
+    {
+      "id": "C02:rumble#0/0",
+      "kind": "bed",
+      "cue": "C02",
+      "name": "rumble",
+      "src": "sfx/rumble.wav",
+      "start": 4,
+      "end": 6.5,
+      "offset": 4,
+      "envStart": 4,
+      "envEnd": 6.5,
+      "gainFrom": -40,
+      "gainTo": -20,
+      "fadeIn": 0.5,
+      "fadeOut": 0,
+      "pitch": 1,
+      "clear": null
+    },
+    {
+      "id": "C03:line0",
+      "kind": "voice",
+      "cue": "C03",
+      "name": "C03#0",
+      "src": "voice/ep01/C03-0.wav",
+      "start": 6.9,
+      "end": 13.351604,
+      "offset": 0,
+      "envStart": 6.9,
+      "envEnd": 13.351604,
+      "gainFrom": 0,
+      "gainTo": 0,
+      "fadeIn": 0,
+      "fadeOut": 0,
+      "pitch": 1,
+      "clear": null
+    },
+    {
+      "id": "C03:rumble#0/0",
+      "kind": "bed",
+      "cue": "C03",
+      "name": "rumble",
+      "src": "sfx/rumble.wav",
+      "start": 6.5,
+      "end": 8,
+      "offset": 6.5,
+      "envStart": 6.5,
+      "envEnd": 12.383863,
+      "gainFrom": -20,
+      "gainTo": -8,
+      "fadeIn": 0,
+      "fadeOut": 0,
+      "pitch": 1,
+      "clear": null
+    },
+    {
+      "id": "C03:rumble#0/1",
+      "kind": "bed",
+      "cue": "C03",
+      "name": "rumble",
+      "src": "sfx/rumble.wav",
+      "start": 8,
+      "end": 12.383863,
+      "offset": 0,
+      "envStart": 6.5,
+      "envEnd": 12.383863,
+      "gainFrom": -20,
+      "gainTo": -8,
+      "fadeIn": 0,
+      "fadeOut": 0,
+      "pitch": 1,
+      "clear": null
+    },
+    {
+      "id": "C04:line0",
+      "kind": "voice",
+      "cue": "C04",
+      "name": "C04#0",
+      "src": "voice/ep01/C04-0.wav",
+      "start": 13.9,
+      "end": 15.282479,
+      "offset": 0,
+      "envStart": 13.9,
+      "envEnd": 15.282479,
+      "gainFrom": 0,
+      "gainTo": 0,
+      "fadeIn": 0,
+      "fadeOut": 0,
+      "pitch": 1,
+      "clear": null
+    },
+    {
+      "id": "C04:glass#0",
+      "kind": "sfx",
+      "cue": "C04",
+      "name": "glass",
+      "src": "sfx/glass.wav",
+      "start": 14,
+      "end": 15.9,
+      "offset": 0,
+      "envStart": 14,
+      "envEnd": 15.9,
+      "gainFrom": -8,
+      "gainTo": -8,
+      "fadeIn": 0,
+      "fadeOut": 0,
+      "pitch": 1,
+      "clear": null
+    },
+    {
+      "id": "C04:boom#0",
+      "kind": "sfx",
+      "cue": "C04",
+      "name": "boom",
+      "src": "sfx/boom.wav",
+      "start": 16.5,
+      "end": 21.1,
+      "offset": 0,
+      "envStart": 16.5,
+      "envEnd": 21.1,
+      "gainFrom": 0,
+      "gainTo": 0,
+      "fadeIn": 0,
+      "fadeOut": 0,
+      "pitch": 1,
+      "clear": null
+    },
+    {
+      "id": "C05:line0",
+      "kind": "voice",
+      "cue": "C05",
+      "name": "C05#0",
+      "src": "voice/ep01/C05-0.wav",
+      "start": 18.9,
+      "end": 20.436104,
+      "offset": 0,
+      "envStart": 18.9,
+      "envEnd": 20.436104,
+      "gainFrom": 0,
+      "gainTo": 0,
+      "fadeIn": 0,
+      "fadeOut": 0,
+      "pitch": 1,
+      "clear": null
+    },
+    {
+      "id": "C05:line1",
+      "kind": "voice",
+      "cue": "C05",
+      "name": "C05#1",
+      "src": "voice/ep01/C05-1.wav",
+      "start": 21.636104,
+      "end": 23.94025,
+      "offset": 0,
+      "envStart": 21.636104,
+      "envEnd": 23.94025,
+      "gainFrom": 0,
+      "gainTo": 0,
+      "fadeIn": 0,
+      "fadeOut": 0,
+      "pitch": 1,
+      "clear": null
+    },
+    {
+      "id": "C05:ring#0",
+      "kind": "sfx",
+      "cue": "C05",
+      "name": "ring",
+      "src": "sfx/ring.wav",
+      "start": 16.5,
+      "end": 24,
+      "offset": 0,
+      "envStart": 16.5,
+      "envEnd": 24,
+      "gainFrom": -18,
+      "gainTo": -18,
+      "fadeIn": 0,
+      "fadeOut": 5.5,
+      "pitch": 1,
+      "clear": null
+    },
+    {
+      "id": "C06:line0",
+      "kind": "voice",
+      "cue": "C06",
+      "name": "C06#0",
+      "src": "voice/ep01/C06-0.wav",
+      "start": 24.4,
+      "end": 29.929958,
+      "offset": 0,
+      "envStart": 24.4,
+      "envEnd": 29.929958,
+      "gainFrom": 0,
+      "gainTo": 0,
+      "fadeIn": 0,
+      "fadeOut": 0,
+      "pitch": 1,
+      "clear": null
+    },
+    {
+      "id": "C06:footstep#0",
+      "kind": "sfx",
+      "cue": "C06",
+      "name": "footstep",
+      "src": "sfx/footstep.wav",
+      "start": 24,
+      "end": 24.32,
+      "offset": 0,
+      "envStart": 24,
+      "envEnd": 24.32,
+      "gainFrom": -10,
+      "gainTo": -10,
+      "fadeIn": 0,
+      "fadeOut": 0,
+      "pitch": 1,
+      "clear": null
+    },
+    {
+      "id": "C06:footstep#1",
+      "kind": "sfx",
+      "cue": "C06",
+      "name": "footstep",
+      "src": "sfx/footstep.wav",
+      "start": 24.8,
+      "end": 25.12,
+      "offset": 0,
+      "envStart": 24.8,
+      "envEnd": 25.12,
+      "gainFrom": -10,
+      "gainTo": -10,
+      "fadeIn": 0,
+      "fadeOut": 0,
+      "pitch": 1,
+      "clear": null
+    },
+    {
+      "id": "C06:footstep#2",
+      "kind": "sfx",
+      "cue": "C06",
+      "name": "footstep",
+      "src": "sfx/footstep.wav",
+      "start": 25.6,
+      "end": 25.92,
+      "offset": 0,
+      "envStart": 25.6,
+      "envEnd": 25.92,
+      "gainFrom": -10,
+      "gainTo": -10,
+      "fadeIn": 0,
+      "fadeOut": 0,
+      "pitch": 1,
+      "clear": null
+    },
+    {
+      "id": "C06:footstep#3",
+      "kind": "sfx",
+      "cue": "C06",
+      "name": "footstep",
+      "src": "sfx/footstep.wav",
+      "start": 26.4,
+      "end": 26.72,
+      "offset": 0,
+      "envStart": 26.4,
+      "envEnd": 26.72,
+      "gainFrom": -10,
+      "gainTo": -10,
+      "fadeIn": 0,
+      "fadeOut": 0,
+      "pitch": 1,
+      "clear": null
+    },
+    {
+      "id": "C06:footstep#4",
+      "kind": "sfx",
+      "cue": "C06",
+      "name": "footstep",
+      "src": "sfx/footstep.wav",
+      "start": 27.2,
+      "end": 27.52,
+      "offset": 0,
+      "envStart": 27.2,
+      "envEnd": 27.52,
+      "gainFrom": -10,
+      "gainTo": -10,
+      "fadeIn": 0,
+      "fadeOut": 0,
+      "pitch": 1,
+      "clear": null
+    },
+    {
+      "id": "C06:footstep#5",
+      "kind": "sfx",
+      "cue": "C06",
+      "name": "footstep",
+      "src": "sfx/footstep.wav",
+      "start": 28,
+      "end": 28.32,
+      "offset": 0,
+      "envStart": 28,
+      "envEnd": 28.32,
+      "gainFrom": -10,
+      "gainTo": -10,
+      "fadeIn": 0,
+      "fadeOut": 0,
+      "pitch": 1,
+      "clear": null
+    },
+    {
+      "id": "C06:footstep#6",
+      "kind": "sfx",
+      "cue": "C06",
+      "name": "footstep",
+      "src": "sfx/footstep.wav",
+      "start": 28.8,
+      "end": 29.12,
+      "offset": 0,
+      "envStart": 28.8,
+      "envEnd": 29.12,
+      "gainFrom": -10,
+      "gainTo": -10,
+      "fadeIn": 0,
+      "fadeOut": 0,
+      "pitch": 1,
+      "clear": null
+    },
+    {
+      "id": "C06:footstep#7",
+      "kind": "sfx",
+      "cue": "C06",
+      "name": "footstep",
+      "src": "sfx/footstep.wav",
+      "start": 29.6,
+      "end": 29.92,
+      "offset": 0,
+      "envStart": 29.6,
+      "envEnd": 29.92,
+      "gainFrom": -10,
+      "gainTo": -10,
+      "fadeIn": 0,
+      "fadeOut": 0,
+      "pitch": 1,
+      "clear": null
+    },
+    {
+      "id": "C06:wind#0/0",
+      "kind": "bed",
+      "cue": "C06",
+      "name": "wind",
+      "src": "sfx/wind.wav",
+      "start": 24,
+      "end": 30,
+      "offset": 24,
+      "envStart": 24,
+      "envEnd": 30,
+      "gainFrom": -20,
+      "gainTo": -20,
+      "fadeIn": 0.5,
+      "fadeOut": 0,
+      "pitch": 1,
+      "clear": null
+    },
+    {
+      "id": "C07:line0",
+      "kind": "voice",
+      "cue": "C07",
+      "name": "C07#0",
+      "src": "voice/ep01/C07-0.wav",
+      "start": 30.4,
+      "end": 31.782479,
+      "offset": 0,
+      "envStart": 30.4,
+      "envEnd": 31.782479,
+      "gainFrom": 0,
+      "gainTo": 0,
+      "fadeIn": 0,
+      "fadeOut": 0,
+      "pitch": 1,
+      "clear": null
+    },
+    {
+      "id": "C07:line1",
+      "kind": "voice",
+      "cue": "C07",
+      "name": "C07#1",
+      "src": "voice/ep01/C07-1.wav",
+      "start": 33.282479,
+      "end": 34.204146,
+      "offset": 0,
+      "envStart": 33.282479,
+      "envEnd": 34.204146,
+      "gainFrom": 0,
+      "gainTo": 0,
+      "fadeIn": 0,
+      "fadeOut": 0,
+      "pitch": 1,
+      "clear": null
+    },
+    {
+      "id": "C07:footstep#0",
+      "kind": "sfx",
+      "cue": "C07",
+      "name": "footstep",
+      "src": "sfx/footstep.wav",
+      "start": 30.4,
+      "end": 30.72,
+      "offset": 0,
+      "envStart": 30.4,
+      "envEnd": 30.72,
+      "gainFrom": -10,
+      "gainTo": -10,
+      "fadeIn": 0,
+      "fadeOut": 0,
+      "pitch": 1,
+      "clear": null
+    },
+    {
+      "id": "C07:wind#0/0",
+      "kind": "bed",
+      "cue": "C07",
+      "name": "wind",
+      "src": "sfx/wind.wav",
+      "start": 30,
+      "end": 35,
+      "offset": 0,
+      "envStart": 30,
+      "envEnd": 35,
+      "gainFrom": -20,
+      "gainTo": -20,
+      "fadeIn": 0,
+      "fadeOut": 0,
+      "pitch": 1,
+      "clear": null
+    },
+    {
+      "id": "C08:line0",
+      "kind": "voice",
+      "cue": "C08",
+      "name": "C08#0",
+      "src": "voice/ep01/C08-0.wav",
+      "start": 35.4,
+      "end": 38.911083,
+      "offset": 0,
+      "envStart": 35.4,
+      "envEnd": 38.911083,
+      "gainFrom": 0,
+      "gainTo": 0,
+      "fadeIn": 0,
+      "fadeOut": 0,
+      "pitch": 1,
+      "clear": null
+    },
+    {
+      "id": "C08:static-sweep#0",
+      "kind": "sfx",
+      "cue": "C08",
+      "name": "static-sweep",
+      "src": "sfx/static-sweep.wav",
+      "start": 38.5,
+      "end": 39.2,
+      "offset": 0,
+      "envStart": 38.5,
+      "envEnd": 39.2,
+      "gainFrom": -14,
+      "gainTo": -14,
+      "fadeIn": 0,
+      "fadeOut": 0,
+      "pitch": 1,
+      "clear": null
+    },
+    {
+      "id": "C08:click#0",
+      "kind": "sfx",
+      "cue": "C08",
+      "name": "click",
+      "src": "sfx/click.wav",
+      "start": 39,
+      "end": 39.06,
+      "offset": 0,
+      "envStart": 39,
+      "envEnd": 39.06,
+      "gainFrom": -14,
+      "gainTo": -14,
+      "fadeIn": 0,
+      "fadeOut": 0,
+      "pitch": 1,
+      "clear": null
+    },
+    {
+      "id": "C09:line0",
+      "kind": "voice",
+      "cue": "C09",
+      "name": "C09#0",
+      "src": "voice/ep01/C09-0.radio.wav",
+      "start": 39.4,
+      "end": 47.995042,
+      "offset": 0,
+      "envStart": 39.4,
+      "envEnd": 47.995042,
+      "gainFrom": 0,
+      "gainTo": 0,
+      "fadeIn": 0,
+      "fadeOut": 0,
+      "pitch": 1,
+      "clear": null
+    },
+    {
+      "id": "C09:static-bed#0/0",
+      "kind": "bed",
+      "cue": "C09",
+      "name": "static-bed",
+      "src": "sfx/static-bed.wav",
+      "start": 39,
+      "end": 40,
+      "offset": 9,
+      "envStart": 39,
+      "envEnd": 48,
+      "gainFrom": -26,
+      "gainTo": -26,
+      "fadeIn": 0,
+      "fadeOut": 0,
+      "pitch": 1,
+      "clear": null
+    },
+    {
+      "id": "C09:static-bed#0/1",
+      "kind": "bed",
+      "cue": "C09",
+      "name": "static-bed",
+      "src": "sfx/static-bed.wav",
+      "start": 40,
+      "end": 48,
+      "offset": 0,
+      "envStart": 39,
+      "envEnd": 48,
+      "gainFrom": -26,
+      "gainTo": -26,
+      "fadeIn": 0,
+      "fadeOut": 0,
+      "pitch": 1,
+      "clear": null
+    },
+    {
+      "id": "C09:click#0",
+      "kind": "sfx",
+      "cue": "C09",
+      "name": "click",
+      "src": "sfx/click.wav",
+      "start": 48,
+      "end": 48.06,
+      "offset": 0,
+      "envStart": 48,
+      "envEnd": 48.06,
+      "gainFrom": -14,
+      "gainTo": -14,
+      "fadeIn": 0,
+      "fadeOut": 0,
+      "pitch": 1,
+      "clear": null
+    },
+    {
+      "id": "C10:line0",
+      "kind": "voice",
+      "cue": "C10",
+      "name": "C10#0",
+      "src": "voice/ep01/C10-0.wav",
+      "start": 48.4,
+      "end": 50.243313,
+      "offset": 0,
+      "envStart": 48.4,
+      "envEnd": 50.243313,
+      "gainFrom": 0,
+      "gainTo": 0,
+      "fadeIn": 0,
+      "fadeOut": 0,
+      "pitch": 1,
+      "clear": null
+    },
+    {
+      "id": "C10:line1",
+      "kind": "voice",
+      "cue": "C10",
+      "name": "C10#1",
+      "src": "voice/ep01/C10-1.wav",
+      "start": 51.043313,
+      "end": 51.964979,
+      "offset": 0,
+      "envStart": 51.043313,
+      "envEnd": 51.964979,
+      "gainFrom": 0,
+      "gainTo": 0,
+      "fadeIn": 0,
+      "fadeOut": 0,
+      "pitch": 1,
+      "clear": null
+    },
+    {
+      "id": "C10:C09#0#0",
+      "kind": "clip",
+      "cue": "C10",
+      "name": "C09#0",
+      "src": "voice/ep01/C09-0.radio.wav",
+      "start": 48,
+      "end": 51.964979,
+      "offset": 0,
+      "envStart": 48,
+      "envEnd": 51.964979,
+      "gainFrom": -6,
+      "gainTo": -6,
+      "fadeIn": 0,
+      "fadeOut": 0,
+      "pitch": 1,
+      "clear": null
+    },
+    {
+      "id": "C10:click#0",
+      "kind": "sfx",
+      "cue": "C10",
+      "name": "click",
+      "src": "sfx/click.wav",
+      "start": 51.964979,
+      "end": 52.024979,
+      "offset": 0,
+      "envStart": 51.964979,
+      "envEnd": 52.024979,
+      "gainFrom": -14,
+      "gainTo": -14,
+      "fadeIn": 0,
+      "fadeOut": 0,
+      "pitch": 1,
+      "clear": null
+    },
+    {
+      "id": "C11:line0",
+      "kind": "voice",
+      "cue": "C11",
+      "name": "C11#0",
+      "src": "voice/ep01/C11-0.wav",
+      "start": 52.4,
+      "end": 53.936104,
+      "offset": 0,
+      "envStart": 52.4,
+      "envEnd": 53.936104,
+      "gainFrom": 0,
+      "gainTo": 0,
+      "fadeIn": 0,
+      "fadeOut": 0,
+      "pitch": 1,
+      "clear": null
+    },
+    {
+      "id": "C11:line1",
+      "kind": "voice",
+      "cue": "C11",
+      "name": "C11#1",
+      "src": "voice/ep01/C11-1.wav",
+      "start": 54.736104,
+      "end": 55.888187,
+      "offset": 0,
+      "envStart": 54.736104,
+      "envEnd": 55.888187,
+      "gainFrom": 0,
+      "gainTo": 0,
+      "fadeIn": 0,
+      "fadeOut": 0,
+      "pitch": 1,
+      "clear": null
+    },
+    {
+      "id": "C11:drone#0/0",
+      "kind": "bed",
+      "cue": "C11",
+      "name": "drone",
+      "src": "sfx/drone.wav",
+      "start": 52,
+      "end": 56,
+      "offset": 12,
+      "envStart": 52,
+      "envEnd": 56,
+      "gainFrom": -14,
+      "gainTo": -14,
+      "fadeIn": 2,
+      "fadeOut": 0,
+      "pitch": 1,
+      "clear": null
+    },
+    {
+      "id": "C11:wind#0/0",
+      "kind": "bed",
+      "cue": "C11",
+      "name": "wind",
+      "src": "sfx/wind.wav",
+      "start": 52,
+      "end": 56,
+      "offset": 22,
+      "envStart": 52,
+      "envEnd": 56,
+      "gainFrom": -22,
+      "gainTo": -22,
+      "fadeIn": 0,
+      "fadeOut": 0,
+      "pitch": 1,
+      "clear": null
+    },
+    {
+      "id": "C12:bang#0",
+      "kind": "sfx",
+      "cue": "C12",
+      "name": "bang",
+      "src": "sfx/bang.wav",
+      "start": 58,
+      "end": 59.5,
+      "offset": 0,
+      "envStart": 58,
+      "envEnd": 59.5,
+      "gainFrom": -2,
+      "gainTo": -2,
+      "fadeIn": 0,
+      "fadeOut": 0,
+      "pitch": 0.9817023960966617,
+      "clear": 1
+    },
+    {
+      "id": "C12:bang#1",
+      "kind": "sfx",
+      "cue": "C12",
+      "name": "bang",
+      "src": "sfx/bang.wav",
+      "start": 59.4,
+      "end": 60.9,
+      "offset": 0,
+      "envStart": 59.4,
+      "envEnd": 60.9,
+      "gainFrom": -2,
+      "gainTo": -2,
+      "fadeIn": 0,
+      "fadeOut": 0,
+      "pitch": 0.988769865296781,
+      "clear": 1
+    },
+    {
+      "id": "C12:bang#2",
+      "kind": "sfx",
+      "cue": "C12",
+      "name": "bang",
+      "src": "sfx/bang.wav",
+      "start": 61,
+      "end": 62.5,
+      "offset": 0,
+      "envStart": 61,
+      "envEnd": 62.5,
+      "gainFrom": -2,
+      "gainTo": -2,
+      "fadeIn": 0,
+      "fadeOut": 0,
+      "pitch": 0.9858494785055518,
+      "clear": 1
+    },
+    {
+      "id": "C12:drone#0/0",
+      "kind": "bed",
+      "cue": "C12",
+      "name": "drone",
+      "src": "sfx/drone.wav",
+      "start": 56,
+      "end": 60,
+      "offset": 16,
+      "envStart": 56,
+      "envEnd": 61.5,
+      "gainFrom": -14,
+      "gainTo": -14,
+      "fadeIn": 0,
+      "fadeOut": 0,
+      "pitch": 1,
+      "clear": null
+    },
+    {
+      "id": "C12:drone#0/1",
+      "kind": "bed",
+      "cue": "C12",
+      "name": "drone",
+      "src": "sfx/drone.wav",
+      "start": 60,
+      "end": 61.5,
+      "offset": 0,
+      "envStart": 56,
+      "envEnd": 61.5,
+      "gainFrom": -14,
+      "gainTo": -14,
+      "fadeIn": 0,
+      "fadeOut": 0,
+      "pitch": 1,
+      "clear": null
+    },
+    {
+      "id": "C13:line0",
+      "kind": "voice",
+      "cue": "C13",
+      "name": "C13#0",
+      "src": "voice/ep01/C13-0.wav",
+      "start": 62.1,
+      "end": 63.943313,
+      "offset": 0,
+      "envStart": 62.1,
+      "envEnd": 63.943313,
+      "gainFrom": 0,
+      "gainTo": 0,
+      "fadeIn": 0,
+      "fadeOut": 0,
+      "pitch": 1,
+      "clear": null
+    },
+    {
+      "id": "C13:drone#0/0",
+      "kind": "bed",
+      "cue": "C13",
+      "name": "drone",
+      "src": "sfx/drone.wav",
+      "start": 61.5,
+      "end": 65,
+      "offset": 1.5,
+      "envStart": 61.5,
+      "envEnd": 65,
+      "gainFrom": -14,
+      "gainTo": -14,
+      "fadeIn": 0,
+      "fadeOut": 0,
+      "pitch": 1,
+      "clear": null
+    },
+    {
+      "id": "C13:wind#0/0",
+      "kind": "bed",
+      "cue": "C13",
+      "name": "wind",
+      "src": "sfx/wind.wav",
+      "start": 61.5,
+      "end": 65,
+      "offset": 1.5,
+      "envStart": 61.5,
+      "envEnd": 65,
+      "gainFrom": -22,
+      "gainTo": -22,
+      "fadeIn": 0,
+      "fadeOut": 0,
+      "pitch": 1,
+      "clear": null
+    },
+    {
+      "id": "C14:line0",
+      "kind": "voice",
+      "cue": "C14",
+      "name": "C14#0",
+      "src": "voice/ep01/C14-0.wav",
+      "start": 65.4,
+      "end": 68.625813,
+      "offset": 0,
+      "envStart": 65.4,
+      "envEnd": 68.625813,
+      "gainFrom": 0,
+      "gainTo": 0,
+      "fadeIn": 0,
+      "fadeOut": 0,
+      "pitch": 1,
+      "clear": null
+    },
+    {
+      "id": "C14:drone#0/0",
+      "kind": "bed",
+      "cue": "C14",
+      "name": "drone",
+      "src": "sfx/drone.wav",
+      "start": 65,
+      "end": 68.5,
+      "offset": 5,
+      "envStart": 65,
+      "envEnd": 68.5,
+      "gainFrom": -14,
+      "gainTo": -14,
+      "fadeIn": 0,
+      "fadeOut": 3.5,
+      "pitch": 1,
+      "clear": null
+    },
+    {
+      "id": "C14:wind#0/0",
+      "kind": "bed",
+      "cue": "C14",
+      "name": "wind",
+      "src": "sfx/wind.wav",
+      "start": 65,
+      "end": 69,
+      "offset": 5,
+      "envStart": 65,
+      "envEnd": 69,
+      "gainFrom": -22,
+      "gainTo": -22,
+      "fadeIn": 0,
+      "fadeOut": 0,
+      "pitch": 1,
+      "clear": null
+    },
+    {
+      "id": "C15:line0",
+      "kind": "voice",
+      "cue": "C15",
+      "name": "C15#0",
+      "src": "voice/ep01/C15-0.wav",
+      "start": 70,
+      "end": 71.843313,
+      "offset": 0,
+      "envStart": 70,
+      "envEnd": 71.843313,
+      "gainFrom": 0,
+      "gainTo": 0,
+      "fadeIn": 0,
+      "fadeOut": 0,
+      "pitch": 1,
+      "clear": null
+    },
+    {
+      "id": "C15:click#0",
+      "kind": "sfx",
+      "cue": "C15",
+      "name": "click",
+      "src": "sfx/click.wav",
+      "start": 71.566816,
+      "end": 71.626816,
+      "offset": 0,
+      "envStart": 71.566816,
+      "envEnd": 71.626816,
+      "gainFrom": -14,
+      "gainTo": -14,
+      "fadeIn": 0,
+      "fadeOut": 0,
+      "pitch": 1,
+      "clear": null
+    }
+  ],
+  "captions": [
+    {
+      "cue": "C01",
+      "line": 0,
+      "start": 0.4,
+      "end": 2.493313,
+      "rows": [
+        "Day one. Tally: one."
+      ],
+      "radio": false
+    },
+    {
+      "cue": "C02",
+      "line": 0,
+      "start": 3.4,
+      "end": 5.493313,
+      "rows": [
+        "I didn't see it."
+      ],
+      "radio": false
+    },
+    {
+      "cue": "C03",
+      "line": 0,
+      "start": 6.9,
+      "end": 12.429946,
+      "rows": [
+        "I was under the second trailer",
+        "when the ground lit up white"
+      ],
+      "radio": false
+    },
+    {
+      "cue": "C03",
+      "line": 0,
+      "start": 12.429946,
+      "end": 13.601604,
+      "rows": [
+        "from underneath."
+      ],
+      "radio": false
+    },
+    {
+      "cue": "C04",
+      "line": 0,
+      "start": 13.9,
+      "end": 15.532479,
+      "rows": [
+        "The windows went."
+      ],
+      "radio": false
+    },
+    {
+      "cue": "C05",
+      "line": 0,
+      "start": 18.9,
+      "end": 20.686104,
+      "rows": [
+        "Then the sound came."
+      ],
+      "radio": false
+    },
+    {
+      "cue": "C05",
+      "line": 1,
+      "start": 21.636104,
+      "end": 24.19025,
+      "rows": [
+        "Then nothing, for a long time."
+      ],
+      "radio": false
+    },
+    {
+      "cue": "C06",
+      "line": 0,
+      "start": 24.4,
+      "end": 29.469128,
+      "rows": [
+        "The highway was a line of",
+        "stopped cars with the doors"
+      ],
+      "radio": false
+    },
+    {
+      "cue": "C06",
+      "line": 0,
+      "start": 29.469128,
+      "end": 30.179958,
+      "rows": [
+        "open."
+      ],
+      "radio": false
+    },
+    {
+      "cue": "C07",
+      "line": 0,
+      "start": 30.4,
+      "end": 32.032478999999995,
+      "rows": [
+        "Nobody in them."
+      ],
+      "radio": false
+    },
+    {
+      "cue": "C07",
+      "line": 1,
+      "start": 33.282479,
+      "end": 34.454146,
+      "rows": [
+        "Nobody anywhere."
+      ],
+      "radio": false
+    },
+    {
+      "cue": "C08",
+      "line": 0,
+      "start": 35.4,
+      "end": 39.161083,
+      "rows": [
+        "At last light, the radio found",
+        "a voice."
+      ],
+      "radio": false
+    },
+    {
+      "cue": "C09",
+      "line": 0,
+      "start": 39.4,
+      "end": 42.044628,
+      "rows": [
+        "Northern Recovery Authority.",
+        "Aircraft will not land for"
+      ],
+      "radio": true
+    },
+    {
+      "cue": "C09",
+      "line": 0,
+      "start": 42.044628,
+      "end": 45.680992,
+      "rows": [
+        "fewer than ten. Gather. Report",
+        "your number on channel seven at"
+      ],
+      "radio": true
+    },
+    {
+      "cue": "C09",
+      "line": 0,
+      "start": 45.680992,
+      "end": 48.245042,
+      "rows": [
+        "last light. Do not travel after",
+        "dark."
+      ],
+      "radio": true
+    },
+    {
+      "cue": "C10",
+      "line": 0,
+      "start": 48.4,
+      "end": 50.493313,
+      "rows": [
+        "It said it again."
+      ],
+      "radio": false
+    },
+    {
+      "cue": "C10",
+      "line": 1,
+      "start": 51.043313,
+      "end": 52.214979,
+      "rows": [
+        "And again."
+      ],
+      "radio": false
+    },
+    {
+      "cue": "C11",
+      "line": 0,
+      "start": 52.4,
+      "end": 54.186104,
+      "rows": [
+        "I turned it off."
+      ],
+      "radio": false
+    },
+    {
+      "cue": "C11",
+      "line": 1,
+      "start": 54.736104,
+      "end": 56.138187,
+      "rows": [
+        "I didn't sleep."
+      ],
+      "radio": false
+    },
+    {
+      "cue": "C13",
+      "line": 0,
+      "start": 62.1,
+      "end": 64.193313,
+      "rows": [
+        "I didn't open it."
+      ],
+      "radio": false
+    },
+    {
+      "cue": "C14",
+      "line": 0,
+      "start": 65.4,
+      "end": 68.875813,
+      "rows": [
+        "The message said: don't travel",
+        "after dark."
+      ],
+      "radio": false
+    },
+    {
+      "cue": "C15",
+      "line": 0,
+      "start": 70,
+      "end": 72.093313,
+      "rows": [
+        "It didn't say why."
+      ],
+      "radio": false
+    }
+  ],
+  "hidden": {
+    "cue": "C06",
+    "words": [
+      "figure",
+      "figures",
+      "someone",
+      "somebody",
+      "person",
+      "people",
+      "stranger",
+      "watching",
+      "watched"
+    ]
+  },
+  "words": {
+    "narrator": 88,
+    "radio": 26
+  },
+  "problems": []
+}

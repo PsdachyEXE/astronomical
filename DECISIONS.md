@@ -66,3 +66,19 @@ One line of reasoning per call. Grouped by build-brief step. Spec contradictions
 - **`assets/MANIFEST.md` and `assets/sfx/index.json` are generated from `src/sfx.ts` and the files.** One source for licences, one measurement for lengths.
 - **Loops (rumble, wind, static bed, drone) are built from whole cycles or crossfaded tails, so they repeat without a seam.** The timeline cuts beds on absolute time, so a bed that spans two cues never restarts.
 - **The door bang is a struck metal panel: a noise transient over seven inharmonic partials from 92 Hz.** Hollow and low reads as a fist on a cab door, not a hammer on a pipe.
+
+## Step 6: timeline
+
+- **Cues in the same shot inherit the previous cue's resolved state, with times already absolute.** The doc writes "Same." for continuing shots; inheriting means C07 keeps C06's hidden figure from 28.0 s without restating it, and nothing cue-relative gets reinterpreted.
+- **Times inside a cue can be references (`"trigger:flash"`, `"line:1:end"`, `"sfx:bang#0+0.2"`, `"end"`) as well as seconds.** Visual events tie to the sound they belong to (glass to the shatter, the jolt to the boom, the door shakes, the window and Cal's jerk to the bangs), so a later TTS that shifts a cue cannot pull picture and sound apart.
+- **Spec conflict: the doc's sync rule starts C13's narration 0.4 s after the cue, 0.9 s after the third bang, and acceptance test 4 forbids narration within 1 s of a bang.** C13 waits 0.6 s. A `clear` value on each bang makes the timeline enforce this on every episode.
+- **C15's cut to black is a trigger on "why" with the 85% fallback (71.57 s in placeholder mode), not a fixed 2.5 s into the cue.** The doc's 71.5 s is where "why" lands at its pace; with a real voice the cut stays on the word.
+- **C10's click and the end of the half-volume loop are anchored to the end of "And again." (51.97 s in placeholder mode) instead of the doc's 51.5 s.** At 51.5 s the click would cut the narrator mid-word; Cal turning the radio off belongs after the line.
+- **The flash white holds to the end of C03 and drains in C04 over 1.5 s.** "Holds 0.9 s" is the minimum the trigger's `hold` guarantees; C04 opens on white, so anything else would cut back to day for a fraction of a second.
+- **Spec conflict: the radio "never speaks more than two sentences at a time", but the Authority message is five and "verbatim, never varied".** The two-sentence lint applies to every radio line except the verbatim message, and a second lint fails any Authority line that is not word-for-word.
+- **A tally change inserts its 1.2-second card immediately before the cue it names.** The brief says "a changes entry with a cue id" and "inserts the card there"; before is the only reading that needs no extra field.
+- **The end card lasts the larger of its minDuration and the platform end-card hold.** All targets share 1.5 s, so the timeline stays platform-free.
+- **Repeating effects (footsteps) sit on a grid from the shot's start, not the cue's.** C07's footsteps continue C06's rhythm across the cue boundary.
+- **Captions are paged against the universal stage's row length (31 characters at 44 px Plex Mono), linger 0.25 s after the line and clear 0.05 s before the next.** Every platform reads the same pages at the same moments.
+- **The timeline also lints the episode-shape rules it can check: under 100 narrator words, at most 30 radio words, two voiceless seconds in the climax, a sting that is not a question, hidden-detail words absent from captions, and the tally adding up.** Episode 2 is a writing task; these catch the writing mistakes a build would otherwise ship.
+- **A cue that runs past its target is a warning, not an error.** Times in the doc are targets; the error is the runtime guard.
