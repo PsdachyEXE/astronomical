@@ -1,5 +1,6 @@
 import { useMemo } from "react";
 import { AbsoluteFill, useCurrentFrame, useVideoConfig } from "remotion";
+import { AudioLayer } from "./AudioLayer";
 import { SafeZoneOverlay } from "./debug/SafeZoneOverlay";
 import { ensureFonts } from "./fonts";
 import { timelineFromProps, type EpisodeProps } from "./lib/props";
@@ -37,6 +38,7 @@ export const Episode: React.FC<EpisodeProps> = (props) => {
           seed={`${timeline.slug}:${cue.synthetic ? cue.id : `shot${cue.shot}`}`}
         />
       )}
+      <AudioLayer timeline={timeline} />
       {props.debug ? <SafeZoneOverlay platform={props.platform} /> : null}
     </AbsoluteFill>
   );

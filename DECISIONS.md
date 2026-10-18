@@ -95,3 +95,11 @@ One line of reasoning per call. Grouped by build-brief step. Spec contradictions
 - **At night, the lit window is the text colour at 20% over ink, with Cal as an ink silhouette inside.** "A slightly lighter rectangle", and a lit window is the only way Cal's jerk upright can be seen.
 - **The dawn line grows from the right edge at 150 px/s in the day-sky colour.** "Creeps along the horizon"; at that pace it crosses most of the frame by the cut to black.
 - **The end card fades the closing tally over its 1.5 s and holds the last two frames pure black.** The loop seam is then black to the DAY card with no fade across it.
+
+## Step 8: audio
+
+- **Every sound is a `<Html5Audio>` in a `<Sequence>` placed from the timeline, with a per-frame volume envelope (a dB ramp times linear fades).** The mix stays in the composition, as the brief asks; the timeline already holds every start and stop.
+- **The three bangs are one sample with a seeded pitch of 1 ± 0.02 each, via Remotion's `toneFrequency`.** "Same fist", and the same three pitches on every render.
+- **Mix levels: effects -8 to -20 dB, beds -20 to -26 dB, drone -14 dB on a quiet file, boom 0 dB and bangs -2 dB.** The bible puts effects under the narration except the flash, the boom and the bangs; the loudness pass sets the absolute level afterwards.
+- **Zod moved to 4.5.4.** Remotion 4.0.536 pins that version for its schema integration and warns on anything else.
+- **Rendered audio is checked by decoding it back and finding onsets (`scripts/lib/audio-analysis.ts`).** A test render of 55 to 62 s puts the bangs at 58.000, 59.400 and 61.000 s.
