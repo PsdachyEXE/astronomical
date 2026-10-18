@@ -7,7 +7,8 @@ export const SAMPLE_RATE = 48000;
 export const decodeMono = (path: string): Float32Array => {
   const res = spawnSync(
     "ffmpeg",
-    ["-hide_banner", "-nostdin", "-v", "error", "-i", path, "-vn", "-ac", "1", "-ar", String(SAMPLE_RATE), "-f", "f32le", "-"],
+    // An explicit average, not ffmpeg's default downmix, which adds 3 dB to identical channels.
+    ["-hide_banner", "-nostdin", "-v", "error", "-i", path, "-vn", "-af", "pan=mono|c0=0.5*c0+0.5*c1", "-ar", String(SAMPLE_RATE), "-f", "f32le", "-"],
     { maxBuffer: 1024 * 1024 * 1024 },
   );
   if (res.status !== 0) throw new Error(`ffmpeg could not decode ${path}: ${res.stderr.toString()}`);

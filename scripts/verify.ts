@@ -139,7 +139,8 @@ const checkBangs = (slug: string, tl: Timeline): string[] => {
   }
   expect(nearest >= 1, `narration within ${s2(nearest)} s of a bang`);
   const audio = decodeMono(outFile(`${slug}.master.mp4`));
-  const found = onsets(audio, { riseDb: 15, floorDb: -30 });
+  // A hit is a 10 dB jump over the last 150 ms: the bangs sit about 14 dB over the night drone.
+  const found = onsets(audio, { riseDb: 10, floorDb: -30 });
   const heard = expected.map((t) => found.find((o) => Math.abs(o - t) <= 0.3) ?? null);
   heard.forEach((h, i) => expect(h !== null, `no hit heard within 0.3 s of ${expected[i]} s in the master's audio`));
   return [

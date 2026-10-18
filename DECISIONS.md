@@ -153,3 +153,7 @@ One line of reasoning per call. Grouped by build-brief step. Spec contradictions
 - **`new-episode` runs the TTS step itself (skip with `--no-tts`) and never overwrites an existing episode file without `--force`.** `npm run timeline` then works straight away, and hand edits to a scaffolded episode are safe from a careless re-run.
 - **Known differences from the hand conversion of Episode 1: the C10 click stays at the table's 51.5 s rather than the end of "And again.", the cut to black fires at 81% of the last clip rather than 85%, cue parts come from the episode-shape timings, and night wind is -20 dB rather than -22.** All four are judgement calls the table doesn't make; the converter takes the table literally.
 - **New scenes still need code.** Episode 2's footprints, body and car radio need scene components; the converter will name the scene it couldn't recognise. "Without code changes" holds for episodes built from the scenes that exist.
+
+## Acceptance run
+
+- **The bang check in `verify` counts a hit as a 10 dB jump over the previous 150 ms, and decodes stereo to mono as a plain average.** In the normalised master the bangs rise about 14 dB over the night drone; ffmpeg's default downmix would have read every level 3 dB hot.
