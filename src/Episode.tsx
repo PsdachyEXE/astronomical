@@ -1,12 +1,13 @@
 import { useMemo } from "react";
 import { AbsoluteFill, useCurrentFrame, useVideoConfig } from "remotion";
 import { AudioLayer } from "./AudioLayer";
+import { Captions } from "./Captions";
 import { SafeZoneOverlay } from "./debug/SafeZoneOverlay";
 import { ensureFonts } from "./fonts";
 import { timelineFromProps, type EpisodeProps } from "./lib/props";
 import type { TimelineCue } from "./lib/timeline";
 import { PALETTE } from "./palette";
-import { stageFor } from "./platforms";
+import { platformConfig, stageFor } from "./platforms";
 import { SceneView } from "./scenes/SceneView";
 
 ensureFonts();
@@ -38,6 +39,7 @@ export const Episode: React.FC<EpisodeProps> = (props) => {
           seed={`${timeline.slug}:${cue.synthetic ? cue.id : `shot${cue.shot}`}`}
         />
       )}
+      {platformConfig(props.platform).captions ? <Captions pages={timeline.captions} t={t} stage={stage} /> : null}
       <AudioLayer timeline={timeline} />
       {props.debug ? <SafeZoneOverlay platform={props.platform} /> : null}
     </AbsoluteFill>

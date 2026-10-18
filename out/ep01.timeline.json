@@ -3157,20 +3157,21 @@
       "cue": "C03",
       "line": 0,
       "start": 6.9,
-      "end": 12.429946,
+      "end": 10.125802,
       "rows": [
-        "I was under the second trailer",
-        "when the ground lit up white"
+        "I was under the",
+        "second trailer when"
       ],
       "radio": false
     },
     {
       "cue": "C03",
       "line": 0,
-      "start": 12.429946,
+      "start": 10.125802,
       "end": 13.601604,
       "rows": [
-        "from underneath."
+        "the ground lit up",
+        "white from underneath."
       ],
       "radio": false
     },
@@ -3208,20 +3209,20 @@
       "cue": "C06",
       "line": 0,
       "start": 24.4,
-      "end": 29.469128,
+      "end": 26.243319,
       "rows": [
-        "The highway was a line of",
-        "stopped cars with the doors"
+        "The highway was a"
       ],
       "radio": false
     },
     {
       "cue": "C06",
       "line": 0,
-      "start": 29.469128,
+      "start": 26.243319,
       "end": 30.179958,
       "rows": [
-        "open."
+        "line of stopped cars",
+        "with the doors open."
       ],
       "radio": false
     },
@@ -3251,8 +3252,8 @@
       "start": 35.4,
       "end": 39.161083,
       "rows": [
-        "At last light, the radio found",
-        "a voice."
+        "At last light,",
+        "the radio found a voice."
       ],
       "radio": false
     },
@@ -3260,32 +3261,32 @@
       "cue": "C09",
       "line": 0,
       "start": 39.4,
-      "end": 42.044628,
+      "end": 41.052893,
       "rows": [
         "Northern Recovery Authority.",
-        "Aircraft will not land for"
+        "Aircraft will"
       ],
       "radio": true
     },
     {
       "cue": "C09",
       "line": 0,
-      "start": 42.044628,
-      "end": 45.680992,
+      "start": 41.052893,
+      "end": 44.358678,
       "rows": [
-        "fewer than ten. Gather. Report",
-        "your number on channel seven at"
+        "not land for fewer than ten.",
+        "Gather. Report your number"
       ],
       "radio": true
     },
     {
       "cue": "C09",
       "line": 0,
-      "start": 45.680992,
+      "start": 44.358678,
       "end": 48.245042,
       "rows": [
-        "last light. Do not travel after",
-        "dark."
+        "on channel seven at last light.",
+        "Do not travel after dark."
       ],
       "radio": true
     },
@@ -3345,8 +3346,8 @@
       "start": 65.4,
       "end": 68.875813,
       "rows": [
-        "The message said: don't travel",
-        "after dark."
+        "The message said:",
+        "don't travel after dark."
       ],
       "radio": false
     },

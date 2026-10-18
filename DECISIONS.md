@@ -103,3 +103,9 @@ One line of reasoning per call. Grouped by build-brief step. Spec contradictions
 - **Mix levels: effects -8 to -20 dB, beds -20 to -26 dB, drone -14 dB on a quiet file, boom 0 dB and bangs -2 dB.** The bible puts effects under the narration except the flash, the boom and the bangs; the loudness pass sets the absolute level afterwards.
 - **Zod moved to 4.5.4.** Remotion 4.0.536 pins that version for its schema integration and warns on anything else.
 - **Rendered audio is checked by decoding it back and finding onsets (`scripts/lib/audio-analysis.ts`).** A test render of 55 to 62 s puts the bangs at 58.000, 59.400 and 61.000 s.
+
+## Step 9: captions
+
+- **Captions carry a 3 px ink outline around the text-colour glyphs.** C03's second caption page sits on the flash white, where text colour alone vanishes; on every other frame the outline disappears into the dark ground.
+- **Pages are chosen for the fewest pages, then the shortest longest page, with breaks after punctuation preferred.** A greedy filler left "open." alone on its own page; this pager has no orphans and splits the Authority message at its sentences where it can.
+- **Captions are drawn as SVG text in their own layer, above the scene and outside any push or jolt.** "Turning it off changes nothing else", and a caption that shook with the blast would be the only readable thing moving.
