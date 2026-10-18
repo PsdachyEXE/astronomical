@@ -1,0 +1,268 @@
+{
+  "episode": 1,
+  "day": 1,
+  "tally": { "open": 1, "close": 1, "struck": [], "changes": [] },
+  "voices": { "narrator": "cal", "radio": "authority" },
+  "hidden": {
+    "cue": "C06",
+    "words": ["figure", "figures", "someone", "somebody", "person", "people", "stranger", "watching", "watched"]
+  },
+  "post": { "hook": "The message said: don't travel after dark." },
+  "cues": [
+    {
+      "id": "C01",
+      "part": "card",
+      "scene": "day-card",
+      "state": {},
+      "narration": [{ "voice": "cal", "text": "Day one. Tally: one.", "pauseBefore": 0.4 }],
+      "sfx": [{ "file": "click", "at": 0, "gain": -14 }],
+      "minDuration": 3.0
+    },
+    {
+      "id": "C02",
+      "part": "situation",
+      "scene": "black-slit",
+      "state": { "slit": { "at": 0.8 } },
+      "narration": [{ "voice": "cal", "text": "I didn't see it.", "pauseBefore": 0.4 }],
+      "sfx": [{ "file": "rumble", "at": 1.0, "until": "end", "gainFrom": -40, "gain": -20, "fadeIn": 0.5 }],
+      "minDuration": 3.5,
+      "notes": "Black. At 3.8 s a thin slit of light low in frame: the gap under a trailer, seen from underneath."
+    },
+    {
+      "id": "C03",
+      "part": "situation",
+      "scene": "roadtrain-side",
+      "state": {
+        "sky": { "from": "day" },
+        "cal": { "pose": "under-trailer", "move": "still" },
+        "flash": { "at": "trigger:flash" }
+      },
+      "narration": [
+        {
+          "voice": "cal",
+          "text": "I was under the second trailer when the ground lit up white from underneath.",
+          "pauseBefore": 0.4
+        }
+      ],
+      "triggers": [{ "id": "flash", "line": 0, "word": "white", "fallback": 0.85, "hold": 0.9 }],
+      "sfx": [{ "file": "rumble", "at": 0, "until": "trigger:flash", "gainFrom": -20, "gain": -8 }],
+      "minDuration": 7.0,
+      "notes": "The rumble peaks and cuts dead at the flash. The flash itself is silent."
+    },
+    {
+      "id": "C04",
+      "part": "situation",
+      "scene": "roadtrain-side",
+      "state": {
+        "sky": { "from": "drained" },
+        "cal": { "pose": "under-trailer", "move": "still" },
+        "flash": { "at": 0, "drain": 1.5 },
+        "glass": { "at": "sfx:glass#0" },
+        "jolt": { "at": "sfx:boom#0", "duration": 0.5, "px": 4 }
+      },
+      "narration": [{ "voice": "cal", "text": "The windows went.", "pauseBefore": 0.4 }],
+      "sfx": [
+        { "file": "glass", "at": 0.5, "gain": -8 },
+        { "file": "boom", "at": 3.0, "gain": 0 }
+      ],
+      "minDuration": 5.0
+    },
+    {
+      "id": "C05",
+      "part": "situation",
+      "scene": "roadtrain-side",
+      "state": { "dust": { "drift": 20 } },
+      "narration": [
+        { "voice": "cal", "text": "Then the sound came.", "pauseBefore": 0.4, "pace": 1.2 },
+        { "voice": "cal", "text": "Then nothing, for a long time.", "pauseBefore": 1.2, "pace": 1.2 }
+      ],
+      "sfx": [{ "file": "ring", "at": -2.0, "until": "end", "gain": -18, "fadeOut": 5.5 }],
+      "minDuration": 5.5
+    },
+    {
+      "id": "C06",
+      "part": "escalation",
+      "scene": "highway-walk",
+      "state": {
+        "sky": { "from": "drained" },
+        "cars": 7,
+        "cal": { "move": "walk" },
+        "hidden": { "from": 4.0 }
+      },
+      "narration": [
+        { "voice": "cal", "text": "The highway was a line of stopped cars with the doors open.", "pauseBefore": 0.4 }
+      ],
+      "sfx": [
+        { "file": "footstep", "every": 0.8, "gain": -10 },
+        { "file": "wind", "until": "end", "gain": -20, "fadeIn": 0.5 }
+      ],
+      "minDuration": 6.0
+    },
+    {
+      "id": "C07",
+      "part": "escalation",
+      "scene": "highway-walk",
+      "state": {
+        "cal": { "move": "walk", "until": 1.0 },
+        "push": { "from": 1.0, "to": 1.06 }
+      },
+      "narration": [
+        { "voice": "cal", "text": "Nobody in them.", "pauseBefore": 0.4 },
+        { "voice": "cal", "text": "Nobody anywhere.", "pauseBefore": 1.5 }
+      ],
+      "sfx": [
+        { "file": "footstep", "every": 0.8, "until": 1.0, "gain": -10 },
+        { "file": "wind", "until": "end", "gain": -20 }
+      ],
+      "minDuration": 5.0
+    },
+    {
+      "id": "C08",
+      "part": "escalation",
+      "scene": "cab-interior",
+      "state": {
+        "sky": { "from": "drained", "to": "dusk" },
+        "sun": { "from": "touching", "to": "touching" },
+        "radio": { "on": "sfx:static-sweep#0" }
+      },
+      "narration": [
+        { "voice": "cal", "text": "At last light, the radio found a voice.", "pauseBefore": 0.4, "pace": 1.05 }
+      ],
+      "sfx": [
+        { "file": "static-sweep", "at": 3.5, "gain": -14 },
+        { "file": "click", "at": "end", "gain": -14 }
+      ],
+      "minDuration": 4.0
+    },
+    {
+      "id": "C09",
+      "part": "escalation",
+      "scene": "cab-interior",
+      "state": {
+        "sky": { "from": "dusk", "to": "night", "mix": [0, 0.25] },
+        "sun": { "from": "touching", "to": "below" },
+        "radio": { "on": "start", "pulse": 0 }
+      },
+      "narration": [
+        {
+          "voice": "authority",
+          "text": "Northern Recovery Authority. Aircraft will not land for fewer than ten. Gather. Report your number on channel seven at last light. Do not travel after dark.",
+          "pauseBefore": 0.4,
+          "pace": 1.1
+        }
+      ],
+      "sfx": [
+        { "file": "static-bed", "until": "end", "gain": -26 },
+        { "file": "click", "at": "end", "gain": -14 }
+      ],
+      "minDuration": 9.0
+    },
+    {
+      "id": "C10",
+      "part": "escalation",
+      "scene": "cab-interior",
+      "state": {
+        "sky": { "from": "dusk", "to": "night", "mix": [0.25, 1] },
+        "sun": { "from": "below", "to": "below" },
+        "radio": { "on": "start", "off": "sfx:click#0" }
+      },
+      "narration": [
+        { "voice": "cal", "text": "It said it again.", "pauseBefore": 0.4 },
+        { "voice": "cal", "text": "And again.", "pauseBefore": 0.8 }
+      ],
+      "sfx": [
+        { "clip": "C09#0", "at": 0, "until": "line:1:end", "gain": -6 },
+        { "file": "click", "at": "line:1:end", "gain": -14 }
+      ],
+      "minDuration": 4.0,
+      "notes": "The loop restarts under the narration at half volume and is cut by a click as the line ends."
+    },
+    {
+      "id": "C11",
+      "part": "climax",
+      "scene": "cab-exterior-night",
+      "state": {
+        "window": { "lit": true },
+        "cal": { "pose": "lying" }
+      },
+      "narration": [
+        { "voice": "cal", "text": "I turned it off.", "pauseBefore": 0.4, "pace": 1.2 },
+        { "voice": "cal", "text": "I didn't sleep.", "pauseBefore": 0.8, "pace": 1.2 }
+      ],
+      "sfx": [
+        { "file": "drone", "until": "end", "gain": -14, "fadeIn": 2.0 },
+        { "file": "wind", "until": "end", "gain": -22 }
+      ],
+      "minDuration": 4.0
+    },
+    {
+      "id": "C12",
+      "part": "climax",
+      "scene": "cab-exterior-night",
+      "state": {
+        "window": { "off": "sfx:bang#1" },
+        "cal": { "up": "sfx:bang#0+0.2" },
+        "door": { "shakeOn": "bang" }
+      },
+      "narration": [],
+      "sfx": [
+        { "file": "bang", "at": 2.0, "gain": -2, "pitch": 0.02, "clear": 1.0 },
+        { "file": "bang", "at": 3.4, "gain": -2, "pitch": 0.02, "clear": 1.0 },
+        { "file": "bang", "at": 5.0, "gain": -2, "pitch": 0.02, "clear": 1.0 },
+        { "file": "drone", "until": "end", "gain": -14 }
+      ],
+      "minDuration": 5.5,
+      "notes": "No narration, by design. The bangs sit in silence and the drone; nothing else moves."
+    },
+    {
+      "id": "C13",
+      "part": "climax",
+      "scene": "cab-exterior-night",
+      "state": {},
+      "narration": [{ "voice": "cal", "text": "I didn't open it.", "pauseBefore": 0.6 }],
+      "sfx": [
+        { "file": "drone", "until": "end", "gain": -14 },
+        { "file": "wind", "until": "end", "gain": -22 }
+      ],
+      "minDuration": 3.5,
+      "notes": "Narration waits 0.6 s, not 0.4, so it clears the third bang by more than a second."
+    },
+    {
+      "id": "C14",
+      "part": "sting",
+      "scene": "cab-exterior-night",
+      "state": {
+        "dawn": { "from": 0 },
+        "print": { "from": 0 }
+      },
+      "narration": [
+        { "voice": "cal", "text": "The message said: don't travel after dark.", "pauseBefore": 0.4 }
+      ],
+      "sfx": [
+        { "file": "drone", "until": 3.5, "gain": -14, "fadeOut": 3.5 },
+        { "file": "wind", "until": "end", "gain": -22 }
+      ],
+      "minDuration": 4.0
+    },
+    {
+      "id": "C15",
+      "part": "sting",
+      "scene": "cab-exterior-night",
+      "state": { "black": { "at": "trigger:black" } },
+      "narration": [{ "voice": "cal", "text": "It didn't say why.", "pauseBefore": 1.0 }],
+      "triggers": [{ "id": "black", "line": 0, "word": "why", "fallback": 0.85, "hold": 0 }],
+      "sfx": [{ "file": "click", "at": "trigger:black", "gain": -14 }],
+      "minDuration": 3.0,
+      "notes": "Hold, then cut to black on the last word."
+    },
+    {
+      "id": "C16",
+      "part": "end",
+      "scene": "end-card",
+      "state": {},
+      "narration": [],
+      "sfx": [],
+      "minDuration": 1.5
+    }
+  ]
+}

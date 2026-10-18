@@ -1,0 +1,68 @@
+{
+  "click": {
+    "file": "sfx/click.wav",
+    "duration": 0.06,
+    "loop": false,
+    "placeholder": true
+  },
+  "rumble": {
+    "file": "sfx/rumble.wav",
+    "duration": 8,
+    "loop": true,
+    "placeholder": true
+  },
+  "glass": {
+    "file": "sfx/glass.wav",
+    "duration": 1.9,
+    "loop": false,
+    "placeholder": true
+  },
+  "boom": {
+    "file": "sfx/boom.wav",
+    "duration": 4.6,
+    "loop": false,
+    "placeholder": true
+  },
+  "ring": {
+    "file": "sfx/ring.wav",
+    "duration": 8,
+    "loop": false,
+    "placeholder": true
+  },
+  "footstep": {
+    "file": "sfx/footstep.wav",
+    "duration": 0.32,
+    "loop": false,
+    "placeholder": true
+  },
+  "wind": {
+    "file": "sfx/wind.wav",
+    "duration": 30,
+    "loop": true,
+    "placeholder": true
+  },
+  "static-sweep": {
+    "file": "sfx/static-sweep.wav",
+    "duration": 0.7,
+    "loop": false,
+    "placeholder": true
+  },
+  "static-bed": {
+    "file": "sfx/static-bed.wav",
+    "duration": 10,
+    "loop": true,
+    "placeholder": true
+  },
+  "bang": {
+    "file": "sfx/bang.wav",
+    "duration": 1.5,
+    "loop": false,
+    "placeholder": true
+  },
+  "drone": {
+    "file": "sfx/drone.wav",
+    "duration": 20,
+    "loop": true,
+    "placeholder": true
+  }
+}

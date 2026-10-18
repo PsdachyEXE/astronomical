@@ -1,0 +1,774 @@
+{
+  "episode": "ep01",
+  "provider": "placeholder",
+  "clips": {
+    "C01#0": {
+      "file": "voice/ep01/C01-0.wav",
+      "voice": "cal",
+      "text": "Day one. Tally: one.",
+      "pace": 1,
+      "duration": 1.8433125,
+      "words": [
+        {
+          "text": "Day",
+          "start": 0,
+          "end": 0.460828125
+        },
+        {
+          "text": "one.",
+          "start": 0.460828125,
+          "end": 0.92165625
+        },
+        {
+          "text": "Tally:",
+          "start": 0.92165625,
+          "end": 1.382484375
+        },
+        {
+          "text": "one.",
+          "start": 1.382484375,
+          "end": 1.8433125
+        }
+      ],
+      "wordTiming": "estimated",
+      "hash": "84fdcfc8"
+    },
+    "C02#0": {
+      "file": "voice/ep01/C02-0.wav",
+      "voice": "cal",
+      "text": "I didn't see it.",
+      "pace": 1,
+      "duration": 1.8433125,
+      "words": [
+        {
+          "text": "I",
+          "start": 0,
+          "end": 0.460828125
+        },
+        {
+          "text": "didn't",
+          "start": 0.460828125,
+          "end": 0.92165625
+        },
+        {
+          "text": "see",
+          "start": 0.92165625,
+          "end": 1.382484375
+        },
+        {
+          "text": "it.",
+          "start": 1.382484375,
+          "end": 1.8433125
+        }
+      ],
+      "wordTiming": "estimated",
+      "hash": "ad6661e7"
+    },
+    "C03#0": {
+      "file": "voice/ep01/C03-0.wav",
+      "voice": "cal",
+      "text": "I was under the second trailer when the ground lit up white from underneath.",
+      "pace": 1,
+      "duration": 6.451604166666667,
+      "words": [
+        {
+          "text": "I",
+          "start": 0,
+          "end": 0.46082886904761905
+        },
+        {
+          "text": "was",
+          "start": 0.46082886904761905,
+          "end": 0.9216577380952381
+        },
+        {
+          "text": "under",
+          "start": 0.9216577380952381,
+          "end": 1.3824866071428572
+        },
+        {
+          "text": "the",
+          "start": 1.3824866071428572,
+          "end": 1.8433154761904762
+        },
+        {
+          "text": "second",
+          "start": 1.8433154761904762,
+          "end": 2.3041443452380954
+        },
+        {
+          "text": "trailer",
+          "start": 2.3041443452380954,
+          "end": 2.7649732142857144
+        },
+        {
+          "text": "when",
+          "start": 2.7649732142857144,
+          "end": 3.2258020833333334
+        },
+        {
+          "text": "the",
+          "start": 3.2258020833333334,
+          "end": 3.6866309523809524
+        },
+        {
+          "text": "ground",
+          "start": 3.6866309523809524,
+          "end": 4.147459821428572
+        },
+        {
+          "text": "lit",
+          "start": 4.147459821428572,
+          "end": 4.608288690476191
+        },
+        {
+          "text": "up",
+          "start": 4.608288690476191,
+          "end": 5.06911755952381
+        },
+        {
+          "text": "white",
+          "start": 5.06911755952381,
+          "end": 5.529946428571429
+        },
+        {
+          "text": "from",
+          "start": 5.529946428571429,
+          "end": 5.990775297619048
+        },
+        {
+          "text": "underneath.",
+          "start": 5.990775297619048,
+          "end": 6.451604166666667
+        }
+      ],
+      "wordTiming": "estimated",
+      "hash": "300c299b"
+    },
+    "C04#0": {
+      "file": "voice/ep01/C04-0.wav",
+      "voice": "cal",
+      "text": "The windows went.",
+      "pace": 1,
+      "duration": 1.3824791666666667,
+      "words": [
+        {
+          "text": "The",
+          "start": 0,
+          "end": 0.4608263888888889
+        },
+        {
+          "text": "windows",
+          "start": 0.4608263888888889,
+          "end": 0.9216527777777778
+        },
+        {
+          "text": "went.",
+          "start": 0.9216527777777778,
+          "end": 1.382479166666667
+        }
+      ],
+      "wordTiming": "estimated",
+      "hash": "839394d8"
+    },
+    "C05#0": {
+      "file": "voice/ep01/C05-0.wav",
+      "voice": "cal",
+      "text": "Then the sound came.",
+      "pace": 1.2,
+      "duration": 1.5361041666666666,
+      "words": [
+        {
+          "text": "Then",
+          "start": 0,
+          "end": 0.38402604166666665
+        },
+        {
+          "text": "the",
+          "start": 0.38402604166666665,
+          "end": 0.7680520833333333
+        },
+        {
+          "text": "sound",
+          "start": 0.7680520833333333,
+          "end": 1.152078125
+        },
+        {
+          "text": "came.",
+          "start": 1.152078125,
+          "end": 1.5361041666666666
+        }
+      ],
+      "wordTiming": "estimated",
+      "hash": "67a2ada7"
+    },
+    "C05#1": {
+      "file": "voice/ep01/C05-1.wav",
+      "voice": "cal",
+      "text": "Then nothing, for a long time.",
+      "pace": 1.2,
+      "duration": 2.304145833333333,
+      "words": [
+        {
+          "text": "Then",
+          "start": 0,
+          "end": 0.3840243055555555
+        },
+        {
+          "text": "nothing,",
+          "start": 0.3840243055555555,
+          "end": 0.768048611111111
+        },
+        {
+          "text": "for",
+          "start": 0.768048611111111,
+          "end": 1.1520729166666666
+        },
+        {
+          "text": "a",
+          "start": 1.1520729166666666,
+          "end": 1.536097222222222
+        },
+        {
+          "text": "long",
+          "start": 1.536097222222222,
+          "end": 1.9201215277777777
+        },
+        {
+          "text": "time.",
+          "start": 1.9201215277777777,
+          "end": 2.304145833333333
+        }
+      ],
+      "wordTiming": "estimated",
+      "hash": "f44838b9"
+    },
+    "C06#0": {
+      "file": "voice/ep01/C06-0.wav",
+      "voice": "cal",
+      "text": "The highway was a line of stopped cars with the doors open.",
+      "pace": 1,
+      "duration": 5.529958333333333,
+      "words": [
+        {
+          "text": "The",
+          "start": 0,
+          "end": 0.46082986111111107
+        },
+        {
+          "text": "highway",
+          "start": 0.46082986111111107,
+          "end": 0.9216597222222221
+        },
+        {
+          "text": "was",
+          "start": 0.9216597222222221,
+          "end": 1.3824895833333333
+        },
+        {
+          "text": "a",
+          "start": 1.3824895833333333,
+          "end": 1.8433194444444443
+        },
+        {
+          "text": "line",
+          "start": 1.8433194444444443,
+          "end": 2.3041493055555553
+        },
+        {
+          "text": "of",
+          "start": 2.3041493055555553,
+          "end": 2.7649791666666665
+        },
+        {
+          "text": "stopped",
+          "start": 2.7649791666666665,
+          "end": 3.225809027777778
+        },
+        {
+          "text": "cars",
+          "start": 3.225809027777778,
+          "end": 3.6866388888888886
+        },
+        {
+          "text": "with",
+          "start": 3.6866388888888886,
+          "end": 4.14746875
+        },
+        {
+          "text": "the",
+          "start": 4.14746875,
+          "end": 4.608298611111111
+        },
+        {
+          "text": "doors",
+          "start": 4.608298611111111,
+          "end": 5.069128472222222
+        },
+        {
+          "text": "open.",
+          "start": 5.069128472222222,
+          "end": 5.529958333333333
+        }
+      ],
+      "wordTiming": "estimated",
+      "hash": "b09029d3"
+    },
+    "C07#0": {
+      "file": "voice/ep01/C07-0.wav",
+      "voice": "cal",
+      "text": "Nobody in them.",
+      "pace": 1,
+      "duration": 1.3824791666666667,
+      "words": [
+        {
+          "text": "Nobody",
+          "start": 0,
+          "end": 0.4608263888888889
+        },
+        {
+          "text": "in",
+          "start": 0.4608263888888889,
+          "end": 0.9216527777777778
+        },
+        {
+          "text": "them.",
+          "start": 0.9216527777777778,
+          "end": 1.382479166666667
+        }
+      ],
+      "wordTiming": "estimated",
+      "hash": "964f3eb0"
+    },
+    "C07#1": {
+      "file": "voice/ep01/C07-1.wav",
+      "voice": "cal",
+      "text": "Nobody anywhere.",
+      "pace": 1,
+      "duration": 0.9216666666666666,
+      "words": [
+        {
+          "text": "Nobody",
+          "start": 0,
+          "end": 0.4608333333333333
+        },
+        {
+          "text": "anywhere.",
+          "start": 0.4608333333333333,
+          "end": 0.9216666666666666
+        }
+      ],
+      "wordTiming": "estimated",
+      "hash": "20822ea0"
+    },
+    "C08#0": {
+      "file": "voice/ep01/C08-0.wav",
+      "voice": "cal",
+      "text": "At last light, the radio found a voice.",
+      "pace": 1.05,
+      "duration": 3.511083333333333,
+      "words": [
+        {
+          "text": "At",
+          "start": 0,
+          "end": 0.43888541666666664
+        },
+        {
+          "text": "last",
+          "start": 0.43888541666666664,
+          "end": 0.8777708333333333
+        },
+        {
+          "text": "light,",
+          "start": 0.8777708333333333,
+          "end": 1.3166562499999999
+        },
+        {
+          "text": "the",
+          "start": 1.3166562499999999,
+          "end": 1.7555416666666666
+        },
+        {
+          "text": "radio",
+          "start": 1.7555416666666666,
+          "end": 2.1944270833333333
+        },
+        {
+          "text": "found",
+          "start": 2.1944270833333333,
+          "end": 2.6333124999999997
+        },
+        {
+          "text": "a",
+          "start": 2.6333124999999997,
+          "end": 3.0721979166666666
+        },
+        {
+          "text": "voice.",
+          "start": 3.0721979166666666,
+          "end": 3.511083333333333
+        }
+      ],
+      "wordTiming": "estimated",
+      "hash": "a56004bd"
+    },
+    "C09#0": {
+      "file": "voice/ep01/C09-0.radio.wav",
+      "voice": "authority",
+      "text": "Northern Recovery Authority. Aircraft will not land for fewer than ten. Gather. Report your number on channel seven at last light. Do not travel after dark.",
+      "pace": 1.1,
+      "duration": 8.595041666666667,
+      "words": [
+        {
+          "text": "Northern",
+          "start": 0,
+          "end": 0.33057852564102563
+        },
+        {
+          "text": "Recovery",
+          "start": 0.33057852564102563,
+          "end": 0.6611570512820513
+        },
+        {
+          "text": "Authority.",
+          "start": 0.6611570512820513,
+          "end": 0.9917355769230769
+        },
+        {
+          "text": "Aircraft",
+          "start": 0.9917355769230769,
+          "end": 1.3223141025641025
+        },
+        {
+          "text": "will",
+          "start": 1.3223141025641025,
+          "end": 1.6528926282051282
+        },
+        {
+          "text": "not",
+          "start": 1.6528926282051282,
+          "end": 1.9834711538461538
+        },
+        {
+          "text": "land",
+          "start": 1.9834711538461538,
+          "end": 2.3140496794871797
+        },
+        {
+          "text": "for",
+          "start": 2.3140496794871797,
+          "end": 2.644628205128205
+        },
+        {
+          "text": "fewer",
+          "start": 2.644628205128205,
+          "end": 2.975206730769231
+        },
+        {
+          "text": "than",
+          "start": 2.975206730769231,
+          "end": 3.3057852564102563
+        },
+        {
+          "text": "ten.",
+          "start": 3.3057852564102563,
+          "end": 3.6363637820512817
+        },
+        {
+          "text": "Gather.",
+          "start": 3.6363637820512817,
+          "end": 3.9669423076923076
+        },
+        {
+          "text": "Report",
+          "start": 3.9669423076923076,
+          "end": 4.2975208333333335
+        },
+        {
+          "text": "your",
+          "start": 4.2975208333333335,
+          "end": 4.628099358974359
+        },
+        {
+          "text": "number",
+          "start": 4.628099358974359,
+          "end": 4.958677884615384
+        },
+        {
+          "text": "on",
+          "start": 4.958677884615384,
+          "end": 5.28925641025641
+        },
+        {
+          "text": "channel",
+          "start": 5.28925641025641,
+          "end": 5.619834935897436
+        },
+        {
+          "text": "seven",
+          "start": 5.619834935897436,
+          "end": 5.950413461538462
+        },
+        {
+          "text": "at",
+          "start": 5.950413461538462,
+          "end": 6.280991987179487
+        },
+        {
+          "text": "last",
+          "start": 6.280991987179487,
+          "end": 6.611570512820513
+        },
+        {
+          "text": "light.",
+          "start": 6.611570512820513,
+          "end": 6.9421490384615385
+        },
+        {
+          "text": "Do",
+          "start": 6.9421490384615385,
+          "end": 7.2727275641025635
+        },
+        {
+          "text": "not",
+          "start": 7.2727275641025635,
+          "end": 7.603306089743589
+        },
+        {
+          "text": "travel",
+          "start": 7.603306089743589,
+          "end": 7.933884615384615
+        },
+        {
+          "text": "after",
+          "start": 7.933884615384615,
+          "end": 8.264463141025642
+        },
+        {
+          "text": "dark.",
+          "start": 8.264463141025642,
+          "end": 8.595041666666667
+        }
+      ],
+      "wordTiming": "estimated",
+      "hash": "d2e0cacf"
+    },
+    "C10#0": {
+      "file": "voice/ep01/C10-0.wav",
+      "voice": "cal",
+      "text": "It said it again.",
+      "pace": 1,
+      "duration": 1.8433125,
+      "words": [
+        {
+          "text": "It",
+          "start": 0,
+          "end": 0.460828125
+        },
+        {
+          "text": "said",
+          "start": 0.460828125,
+          "end": 0.92165625
+        },
+        {
+          "text": "it",
+          "start": 0.92165625,
+          "end": 1.382484375
+        },
+        {
+          "text": "again.",
+          "start": 1.382484375,
+          "end": 1.8433125
+        }
+      ],
+      "wordTiming": "estimated",
+      "hash": "357560a9"
+    },
+    "C10#1": {
+      "file": "voice/ep01/C10-1.wav",
+      "voice": "cal",
+      "text": "And again.",
+      "pace": 1,
+      "duration": 0.9216666666666666,
+      "words": [
+        {
+          "text": "And",
+          "start": 0,
+          "end": 0.4608333333333333
+        },
+        {
+          "text": "again.",
+          "start": 0.4608333333333333,
+          "end": 0.9216666666666666
+        }
+      ],
+      "wordTiming": "estimated",
+      "hash": "d7b6dba3"
+    },
+    "C11#0": {
+      "file": "voice/ep01/C11-0.wav",
+      "voice": "cal",
+      "text": "I turned it off.",
+      "pace": 1.2,
+      "duration": 1.5361041666666666,
+      "words": [
+        {
+          "text": "I",
+          "start": 0,
+          "end": 0.38402604166666665
+        },
+        {
+          "text": "turned",
+          "start": 0.38402604166666665,
+          "end": 0.7680520833333333
+        },
+        {
+          "text": "it",
+          "start": 0.7680520833333333,
+          "end": 1.152078125
+        },
+        {
+          "text": "off.",
+          "start": 1.152078125,
+          "end": 1.5361041666666666
+        }
+      ],
+      "wordTiming": "estimated",
+      "hash": "ed2bd02d"
+    },
+    "C11#1": {
+      "file": "voice/ep01/C11-1.wav",
+      "voice": "cal",
+      "text": "I didn't sleep.",
+      "pace": 1.2,
+      "duration": 1.1520833333333333,
+      "words": [
+        {
+          "text": "I",
+          "start": 0,
+          "end": 0.3840277777777778
+        },
+        {
+          "text": "didn't",
+          "start": 0.3840277777777778,
+          "end": 0.7680555555555556
+        },
+        {
+          "text": "sleep.",
+          "start": 0.7680555555555556,
+          "end": 1.1520833333333333
+        }
+      ],
+      "wordTiming": "estimated",
+      "hash": "53e50dd6"
+    },
+    "C13#0": {
+      "file": "voice/ep01/C13-0.wav",
+      "voice": "cal",
+      "text": "I didn't open it.",
+      "pace": 1,
+      "duration": 1.8433125,
+      "words": [
+        {
+          "text": "I",
+          "start": 0,
+          "end": 0.460828125
+        },
+        {
+          "text": "didn't",
+          "start": 0.460828125,
+          "end": 0.92165625
+        },
+        {
+          "text": "open",
+          "start": 0.92165625,
+          "end": 1.382484375
+        },
+        {
+          "text": "it.",
+          "start": 1.382484375,
+          "end": 1.8433125
+        }
+      ],
+      "wordTiming": "estimated",
+      "hash": "5bf9b07e"
+    },
+    "C14#0": {
+      "file": "voice/ep01/C14-0.wav",
+      "voice": "cal",
+      "text": "The message said: don't travel after dark.",
+      "pace": 1,
+      "duration": 3.2258125,
+      "words": [
+        {
+          "text": "The",
+          "start": 0,
+          "end": 0.46083035714285714
+        },
+        {
+          "text": "message",
+          "start": 0.46083035714285714,
+          "end": 0.9216607142857143
+        },
+        {
+          "text": "said:",
+          "start": 0.9216607142857143,
+          "end": 1.3824910714285714
+        },
+        {
+          "text": "don't",
+          "start": 1.3824910714285714,
+          "end": 1.8433214285714286
+        },
+        {
+          "text": "travel",
+          "start": 1.8433214285714286,
+          "end": 2.3041517857142857
+        },
+        {
+          "text": "after",
+          "start": 2.3041517857142857,
+          "end": 2.764982142857143
+        },
+        {
+          "text": "dark.",
+          "start": 2.764982142857143,
+          "end": 3.2258125
+        }
+      ],
+      "wordTiming": "estimated",
+      "hash": "3f0e0377"
+    },
+    "C15#0": {
+      "file": "voice/ep01/C15-0.wav",
+      "voice": "cal",
+      "text": "It didn't say why.",
+      "pace": 1,
+      "duration": 1.8433125,
+      "words": [
+        {
+          "text": "It",
+          "start": 0,
+          "end": 0.460828125
+        },
+        {
+          "text": "didn't",
+          "start": 0.460828125,
+          "end": 0.92165625
+        },
+        {
+          "text": "say",
+          "start": 0.92165625,
+          "end": 1.382484375
+        },
+        {
+          "text": "why.",
+          "start": 1.382484375,
+          "end": 1.8433125
+        }
+      ],
+      "wordTiming": "estimated",
+      "hash": "b1070be4"
+    }
+  }
+}

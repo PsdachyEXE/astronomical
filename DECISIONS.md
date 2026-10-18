@@ -48,3 +48,21 @@ One line of reasoning per call. Grouped by build-brief step. Spec contradictions
 - **Flinch is the 2-frame squash first, then the 8 px jump over the remaining 8 frames.** The bible gives the parts and the 10-frame total, not the order; squash-then-jump is the readable one.
 - **The jolt picks a fresh seeded offset of 2 to 4 px each frame; the door shake is a fixed decaying pattern peaking at 6 px.** The blast should feel random and the fist should feel the same each time.
 - **Glass falls under gravity (2,600 px/s²); rain falls at a steady 1,400 px/s.** The bible gives rain's speed; glass needs to look dropped, not poured.
+
+## Step 5: TTS
+
+- **Spec conflict: at the prompt's 2.17 words a second, C05, C08 and C11 overrun their table durations (by 0.71, 0.09 and 0.43 s), and the Authority message (26 words at the bible's 165 a minute) overruns C09.** Left alone, C06 starts 0.7 s late and the bangs 1.2 s late, failing acceptance tests 2, 4 and 5. Each line may carry a `pace` direction (1 = the voice's natural rate) that a real provider receives as its speaking rate and the placeholder divides into its length. Every Episode 1 line is at 1.0 except C05 (1.2), C08 (1.05), C09 (1.1) and C11 (1.2): the smallest 0.05 steps that land the doc's table.
+- **The Authority voice's placeholder pace is the bible's 165 words a minute, not 2.17 words a second.** The prompt's rate describes the narrator; at 2.17 the message alone runs 12 s against a 9 s cue.
+- **Placeholder clips carry a 80 ms tone (880 Hz narrator, 1,320 Hz radio) at -18 dBFS, then silence.** Line starts can be checked by ear in the render.
+- **timing.json records `wordTiming: "estimated"` for evenly spaced stamps and `"measured"` for provider or aligned stamps.** That is a property of the data, not of the mode, and it is how the 85% trigger fallback applies to placeholder clips without the timeline knowing which provider ran.
+- **Clip lengths in timing.json are measured from the written WAV, not taken from the formula.** "Every timing derived from audio" holds even in placeholder mode.
+- **Clips are cached by a hash of voice, pace and text; unchanged lines are reused.** A paid provider is then billed once per line, not once per run.
+- **Radio clips are band-passed with two cascaded 300 Hz high-pass and 3,400 Hz low-pass stages plus the static bed at -24 dB, by system ffmpeg.** Without ffmpeg the raw clip is used and the script says so.
+- **No real TTS provider or forced alignment is wired yet.** That waits on the provider question; the interface (`scripts/lib/tts-providers.ts`) takes one function per provider.
+
+## Effects (built in step 5 because the TTS radio filter and the timeline both need them)
+
+- **All eleven effects are seeded synthesised stand-ins, marked PLACEHOLDER in `assets/MANIFEST.md`.** freesound.org, kenney.nl and opengameart.org were blocked by the build environment's network policy.
+- **`assets/MANIFEST.md` and `assets/sfx/index.json` are generated from `src/sfx.ts` and the files.** One source for licences, one measurement for lengths.
+- **Loops (rumble, wind, static bed, drone) are built from whole cycles or crossfaded tails, so they repeat without a seam.** The timeline cuts beds on absolute time, so a bed that spans two cues never restarts.
+- **The door bang is a struck metal panel: a noise transient over seven inharmonic partials from 92 Hz.** Hollow and low reads as a fist on a cab door, not a hammer on a pipe.
