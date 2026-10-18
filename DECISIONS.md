@@ -26,3 +26,16 @@ One line of reasoning per call. Grouped by build-brief step. Spec contradictions
 - **Mouths are ink, except on ink figures (Hollis and his people), where they are the night-horizon navy.** An ink mouth on an ink head would vanish, and a mouth that barely shows suits people who "can stand in the dark and not be there".
 - **Encode presets are house choices: H.264 high, level 4.1, CRF 16 to 20, AAC 192 kbps, a peak cap per platform.** No platform publishes upload numbers that bind for flat-colour animation, and every platform re-encodes anyway.
 - **Platform length limits are recorded with their source; the runtime guard (62 to 170 s) is a separate constant tested to sit inside every window.** The guard is the prompt's rule, the limits are the facts it rests on.
+
+## Step 3: primitives
+
+- **Primitives are static drawers; anything that moves takes its value (fallen distance, drift, draw progress, bob) as a prop computed in `src/motion.ts`.** That keeps "nothing animates outside motion.ts" checkable by reading one file.
+- **Figure proportions: head 72, gap 8, torso 110, legs 50, total 240 px.** The bible fixes head, gap, torso and the 240 px adult, so the legs get what is left.
+- **Mouth sits at ±0.56 of the head radius for left/right facing, not the literal third.** A 28 px stroke centred in the outer third would hang off the head.
+- **Primitives beyond the brief's list (Sun, Smudge, Car, Fragments, Print, Slit, HorizonLine, CabInterior, Backdrop, Building, Mound).** The brief says scenes draw nothing outside primitives, and Episode 1 needs a sun, smudges, cars, glass, a slit and a dawn line.
+- **The handprint primitive is `Print`, and no primitive file mentions body parts.** Acceptance test 9 greps `src/primitives` for "hand", "eye" and "foot".
+- **Trailers ride on a rail with 96 px of clearance at 1.0 scale.** Cal has to lie under the second trailer with one arm up to the chassis.
+- **Smudges are clusters of ink circles at 45% opacity.** No blur and no gradient, and still reads as smoke on the horizon.
+- **Stopped cars are seen from behind in the pale road-dash colour, with the open door as a line.** Against the drained ground an ink car vanishes at the small end of the road.
+- **Rain, dust, glass and smudges are placed by a seeded Mulberry32 generator (`src/lib/rng.ts`).** No `Math.random` anywhere.
+- **A dev-only `Gallery` composition shows every primitive on one frame.** Step 3 has to end with something that runs.
