@@ -2,6 +2,7 @@ import { useMemo } from "react";
 import { AbsoluteFill, useCurrentFrame, useVideoConfig } from "remotion";
 import { AudioLayer } from "./AudioLayer";
 import { Captions } from "./Captions";
+import { ReadableProbe } from "./debug/ReadableProbe";
 import { SafeZoneOverlay } from "./debug/SafeZoneOverlay";
 import { ensureFonts } from "./fonts";
 import { timelineFromProps, type EpisodeProps } from "./lib/props";
@@ -28,7 +29,7 @@ export const Episode: React.FC<EpisodeProps> = (props) => {
   const cue = cueAtFrame(timeline.cues, frame);
   const t = frame / fps;
   return (
-    <AbsoluteFill style={{ backgroundColor: PALETTE.black }}>
+    <AbsoluteFill style={{ backgroundColor: PALETTE.black }} data-tally-frame="">
       {cue === null ? null : (
         <SceneView
           state={cue.state}
@@ -41,7 +42,8 @@ export const Episode: React.FC<EpisodeProps> = (props) => {
       )}
       {platformConfig(props.platform).captions ? <Captions pages={timeline.captions} t={t} stage={stage} /> : null}
       <AudioLayer timeline={timeline} />
-      {props.debug ? <SafeZoneOverlay platform={props.platform} /> : null}
+      {props.debug ? <SafeZoneOverlay platform={props.platform} label={props.debugLabel} /> : null}
+      {props.debug ? <ReadableProbe platform={props.platform} /> : null}
     </AbsoluteFill>
   );
 };

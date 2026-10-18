@@ -21,6 +21,15 @@ export const PALETTE = {
 
 export type PaletteToken = keyof typeof PALETTE;
 
+/** Debug overlay colours. Never in a deliverable frame. */
+export const DEBUG = {
+  zone: "#FF3B3B",
+  stage: "#FFFFFF",
+  pass: "#3BE36B",
+  fail: "#FF2D2D",
+  label: "#FFFFFF",
+} as const;
+
 /** After the flash, day colours are mixed 20% toward grey for the rest of the series. */
 export const DRAIN = { toward: "#808080", amount: 0.2 } as const;
 

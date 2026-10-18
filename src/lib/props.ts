@@ -16,6 +16,8 @@ export type EpisodeProps = {
   platform: TargetId;
   /** Draws the platform's blocked zones and the measured boxes of readable elements. */
   debug: boolean;
+  /** Debug caption for contact sheets. */
+  debugLabel?: string;
 };
 
 export const timelineFromProps = (props: EpisodeProps): { timeline: Timeline; problems: Problem[] } =>

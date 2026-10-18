@@ -143,6 +143,17 @@ export const NIGHT_DOOR_WINDOW: Box = { x: 500, y: 912, w: 240, h: 156 };
 export const PRINT_BOX: Box = { x: 572, y: 934, w: 96, h: 118 };
 
 // ---------------------------------------------------------------------------
+// Type
+// ---------------------------------------------------------------------------
+
+/**
+ * IBM Plex Mono metrics, as fractions of the font size: every glyph advances
+ * 0.6 em, and a line of text paints a box of ascent + descent = 1.3 em
+ * (hhea 1025 + 275 units per 1000), centred on the row.
+ */
+export const FONT = { advance: 0.6, box: 1.3 } as const;
+
+// ---------------------------------------------------------------------------
 // Cards
 // ---------------------------------------------------------------------------
 
@@ -150,8 +161,6 @@ export const CARD = {
   /** Card centre sits this far above the stage's vertical centre: 880 - 20 = 860 on the universal stage. */
   centreOffsetY: -20,
   dayFontSize: 132,
-  /** Plex Mono advance width as a fraction of the font size. */
-  advance: 0.6,
   dayLineHeight: 1.0,
   gap: 56,
   stroke: {
@@ -163,7 +172,11 @@ export const CARD = {
     overhang: 18,
     /** How far a strike overhangs the mark it crosses. */
     strikeOverhang: 16,
+    /** Space between rows when a long tally wraps. */
+    rowGap: 36,
   },
+  /** Clear space kept either side of a tally row inside the stage. */
+  sideMargin: 40,
 } as const;
 
 export type StrokeGeom = {
@@ -204,17 +217,28 @@ const strokeBox = (st: { x1: number; y1: number; x2: number; y2: number }): Box 
   h: Math.abs(st.y2 - st.y1) + CARD.stroke.width,
 });
 
-/** Strokes for `marks` tally marks, laid out from x = 0 at the given top. */
-const tallyStrokes = (marks: number, top: number): StrokeGeom[] => {
+/** How many five-bar gates fit across a stage before the tally wraps. */
+export const gatesPerRow = (stageWidth: number): number => {
+  const st = CARD.stroke;
+  const gateSpan = 3 * st.spacing + 2 * st.overhang + st.width;
+  return Math.max(1, Math.floor((stageWidth - 2 * CARD.sideMargin + st.gateGap) / (gateSpan + st.gateGap)));
+};
+
+/** Strokes for `marks` tally marks, rows of `perRow` gates, laid out from x = 0 at the given top. */
+const tallyStrokes = (marks: number, top: number, perRow: number): StrokeGeom[] => {
   const s = CARD.stroke;
   const strokes: StrokeGeom[] = [];
+  const perRowMarks = perRow * 5;
   let x = 0;
   let gateStartX = 0;
   for (let mark = 0; mark < marks; mark++) {
+    const row = Math.floor(mark / perRowMarks);
+    const rowTop = top + row * (s.length + s.rowGap);
+    if (mark % perRowMarks === 0) x = 0;
     const inGate = mark % 5;
     if (inGate === 0) gateStartX = x;
     if (inGate < 4) {
-      strokes.push({ mark, kind: "upright", x1: x, y1: top, x2: x, y2: top + s.length });
+      strokes.push({ mark, kind: "upright", x1: x, y1: rowTop, x2: x, y2: rowTop + s.length });
       x += s.spacing;
     } else {
       // The fifth stroke closes the gate: a diagonal through the four uprights.
@@ -223,9 +247,9 @@ const tallyStrokes = (marks: number, top: number): StrokeGeom[] => {
         mark,
         kind: "gate",
         x1: gateStartX - s.overhang,
-        y1: top + s.length * 0.82,
+        y1: rowTop + s.length * 0.82,
         x2: lastUpright + s.overhang,
-        y2: top + s.length * 0.18,
+        y2: rowTop + s.length * 0.18,
       });
       x = lastUpright + s.overhang + s.gateGap;
     }
@@ -245,17 +269,20 @@ export const cardLayout = (
   const s = CARD.stroke;
   const centre = { x: centreX(stage), y: centreY(stage) + CARD.centreOffsetY };
   const hasDay = opts.dayText !== null;
+  const perRow = gatesPerRow(stage.w);
+  const tallyRows = Math.max(1, Math.ceil(opts.marks / (perRow * 5)));
+  const tallyHeight = tallyRows * s.length + (tallyRows - 1) * s.rowGap;
   const dayHeight = hasDay ? CARD.dayFontSize * CARD.dayLineHeight : 0;
-  const groupHeight = dayHeight + (hasDay ? CARD.gap : 0) + s.length;
+  const groupHeight = dayHeight + (hasDay ? CARD.gap : 0) + tallyHeight;
   const top = centre.y - groupHeight / 2;
 
-  const dayWidth = hasDay ? (opts.dayText ?? "").length * CARD.advance * CARD.dayFontSize : 0;
+  const dayWidth = hasDay ? (opts.dayText ?? "").length * FONT.advance * CARD.dayFontSize : 0;
   const dayBox: Box | null = hasDay
     ? { x: centre.x - dayWidth / 2, y: top, w: dayWidth, h: dayHeight }
     : null;
 
   const tallyTop = top + dayHeight + (hasDay ? CARD.gap : 0);
-  const raw = tallyStrokes(opts.marks, tallyTop);
+  const raw = tallyStrokes(opts.marks, tallyTop, perRow);
   const rawBox = raw.length > 0 ? union(raw.map(strokeBox)) : { x: 0, y: tallyTop, w: 0, h: s.length };
   const shift = centre.x - centreX(rawBox);
   const strokes = raw.map((st) => ({ ...st, x1: st.x1 + shift, x2: st.x2 + shift }));
@@ -264,24 +291,22 @@ export const cardLayout = (
     const stroke = strokes.find((st) => st.mark === mark);
     if (stroke === undefined) return [];
     const midX = (stroke.x1 + stroke.x2) / 2;
+    const midY = (stroke.y1 + stroke.y2) / 2;
     const half = s.length * 0.3;
     const reach = s.strikeOverhang + s.width;
-    return [
-      {
-        mark,
-        x1: midX - reach,
-        y1: tallyTop + s.length / 2 + half,
-        x2: midX + reach,
-        y2: tallyTop + s.length / 2 - half,
-      },
-    ];
+    return [{ mark, x1: midX - reach, y1: midY + half, x2: midX + reach, y2: midY - half }];
   });
 
   const tallyBox: Box =
     strokes.length > 0
       ? union([...strokes, ...strikes].map(strokeBox))
       : { x: centre.x - s.width / 2, y: tallyTop, w: s.width, h: s.length };
-  const box = union(dayBox === null ? [tallyBox] : [dayBox, tallyBox]);
+  // The painted text box is the font's full ascent + descent, centred on the DAY line.
+  const dayPaint: Box | null =
+    dayBox === null
+      ? null
+      : { x: dayBox.x, y: centreY(dayBox) - (FONT.box * CARD.dayFontSize) / 2, w: dayBox.w, h: FONT.box * CARD.dayFontSize };
+  const box = union(dayPaint === null ? [tallyBox] : [dayPaint, tallyBox]);
   return { centre, dayBox, dayFontSize: CARD.dayFontSize, tallyBox, strokes, strikes, box };
 };
 
@@ -293,7 +318,6 @@ export const CAPTION = {
   fontSize: 44,
   lineHeight: 1.25,
   maxRows: 2,
-  advance: 0.6,
   /** Caption block centre sits this far above the stage bottom: 1540 - 100 = 1440 on the universal stage. */
   bottomOffset: 100,
   /** Horizontal breathing room inside the stage when working out row length. */
@@ -305,13 +329,19 @@ export const CAPTION = {
 
 /** Characters per caption row for a stage width. */
 export const captionCharsPerRow = (stageWidth: number): number =>
-  Math.floor((stageWidth - 2 * CAPTION.sideInset) / (CAPTION.fontSize * CAPTION.advance));
+  Math.floor((stageWidth - 2 * CAPTION.sideInset) / (CAPTION.fontSize * FONT.advance));
 
-/** Box of a caption block of the given rows, centred on the stage's caption line. */
+/** Centre y of row i of an n-row caption block on a stage. */
+export const captionRowY = (stage: Box, rows: number, i: number): number => {
+  const rowHeight = CAPTION.fontSize * CAPTION.lineHeight;
+  return bottom(stage) - CAPTION.bottomOffset - ((rows - 1) * rowHeight) / 2 + i * rowHeight;
+};
+
+/** Painted box of a caption block of the given rows, outline included, centred on the stage's caption line. */
 export const captionBox = (stage: Box, rows: readonly string[]): Box => {
   const longest = Math.max(1, ...rows.map((r) => r.length));
-  const w = longest * CAPTION.fontSize * CAPTION.advance + 2 * CAPTION.outline;
-  const h = rows.length * CAPTION.fontSize * CAPTION.lineHeight;
-  const cy = bottom(stage) - CAPTION.bottomOffset;
-  return { x: centreX(stage) - w / 2, y: cy - h / 2, w, h };
+  const w = longest * CAPTION.fontSize * FONT.advance + 2 * CAPTION.outline;
+  const top = captionRowY(stage, rows.length, 0) - (FONT.box * CAPTION.fontSize) / 2 - CAPTION.outline;
+  const btm = captionRowY(stage, rows.length, rows.length - 1) + (FONT.box * CAPTION.fontSize) / 2 + CAPTION.outline;
+  return { x: centreX(stage) - w / 2, y: top, w, h: btm - top };
 };

@@ -1,42 +1,43 @@
 import { AbsoluteFill } from "remotion";
+import { FONT_FAMILY } from "../fonts";
 import { FRAME } from "../layout";
-import { blockedZonesFor, platformConfig, stageFor, type TargetId } from "../platforms";
-import { PALETTE } from "../palette";
+import { DEBUG } from "../palette";
+import { platformConfig, stageFor, type TargetId } from "../platforms";
 
 /**
- * Debug only: the target's interface bands as translucent rectangles and its
- * stage as an outline. Never rendered in a deliverable.
+ * Debug only: the target's interface as one translucent band around the
+ * frame (the master shows the union of all five), its stage as a dashed
+ * outline, and a label. Never rendered in a deliverable.
  */
-export const SafeZoneOverlay: React.FC<{ platform: TargetId }> = ({ platform }) => {
-  const zones = blockedZonesFor(platform);
+export const SafeZoneOverlay: React.FC<{ platform: TargetId; label?: string }> = ({ platform, label }) => {
+  const cfg = platformConfig(platform);
+  const m = cfg.safeZone;
   const stage = stageFor(platform);
+  const inner = `M ${m.left} ${m.top} H ${FRAME.width - m.right} V ${FRAME.height - m.bottom} H ${m.left} Z`;
+  const outer = `M 0 0 H ${FRAME.width} V ${FRAME.height} H 0 Z`;
   return (
     <AbsoluteFill style={{ pointerEvents: "none" }}>
       <svg width={FRAME.width} height={FRAME.height} viewBox={`0 0 ${FRAME.width} ${FRAME.height}`}>
-        {zones.map((z, i) => (
-          <rect key={i} x={z.x} y={z.y} width={z.w} height={z.h} fill={PALETTE.flash} fillOpacity={0.28} />
-        ))}
+        <path d={`${outer} ${inner}`} fill={DEBUG.zone} fillOpacity={0.32} fillRule="evenodd" />
         <rect
           x={stage.x}
           y={stage.y}
           width={stage.w}
           height={stage.h}
           fill="none"
-          stroke={PALETTE.flash}
-          strokeOpacity={0.7}
+          stroke={DEBUG.stage}
+          strokeOpacity={0.75}
           strokeWidth={3}
           strokeDasharray="18 12"
         />
-        <text
-          x={stage.x + 12}
-          y={stage.y + 40}
-          fill={PALETTE.flash}
-          fillOpacity={0.9}
-          fontFamily="TallyMono, monospace"
-          fontSize={32}
-        >
-          {platformConfig(platform).label}
+        <text x={24} y={70} fill={DEBUG.label} fontFamily={FONT_FAMILY} fontWeight={600} fontSize={54}>
+          {cfg.label}
         </text>
+        {label === undefined ? null : (
+          <text x={24} y={FRAME.height - 36} fill={DEBUG.label} fontFamily={FONT_FAMILY} fontWeight={600} fontSize={54}>
+            {label}
+          </text>
+        )}
       </svg>
     </AbsoluteFill>
   );

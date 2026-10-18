@@ -1,4 +1,4 @@
-import { CAPTION, captionBox, centreX, FRAME, type Box } from "./layout";
+import { CAPTION, captionRowY, centreX, FRAME, type Box } from "./layout";
 import { FONT_FAMILY } from "./fonts";
 import type { CaptionPage } from "./lib/captions";
 import { PALETTE } from "./palette";
@@ -16,8 +16,6 @@ export const pageAt = (pages: readonly CaptionPage[], t: number): CaptionPage | 
 export const Captions: React.FC<{ pages: readonly CaptionPage[]; t: number; stage: Box }> = ({ pages, t, stage }) => {
   const page = pageAt(pages, t);
   if (page === null) return null;
-  const box = captionBox(stage, page.rows);
-  const rowHeight = CAPTION.fontSize * CAPTION.lineHeight;
   return (
     <svg
       width={FRAME.width}
@@ -29,8 +27,8 @@ export const Captions: React.FC<{ pages: readonly CaptionPage[]; t: number; stag
         {page.rows.map((row, i) => (
           <text
             key={i}
-            x={centreX(box)}
-            y={box.y + rowHeight * (i + 0.5)}
+            x={centreX(stage)}
+            y={captionRowY(stage, page.rows.length, i)}
             textAnchor="middle"
             dominantBaseline="central"
             fontFamily={FONT_FAMILY}

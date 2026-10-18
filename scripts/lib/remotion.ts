@@ -2,7 +2,7 @@
 import { existsSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 import { bundle } from "@remotion/bundler";
-import { renderStill, selectComposition, type BrowserLog } from "@remotion/renderer";
+import { openBrowser, renderStill, selectComposition, type BrowserLog } from "@remotion/renderer";
 import type { EpisodeProps } from "../../src/lib/props";
 import type { TargetId } from "../../src/platforms";
 import { episodeFile, readJson, ROOT, ASSETS, timingFile } from "./paths";
@@ -48,12 +48,32 @@ export const episodeProps = (slug: string, platform: TargetId, debug = false): E
   debug,
 });
 
+type Browser = Awaited<ReturnType<typeof openBrowser>>;
+let browser: Promise<Browser> | null = null;
+
+/** One headless browser shared by every still in a run. Close it with closeBrowser(). */
+const sharedBrowser = (): Promise<Browser> => {
+  if (browser === null) {
+    browser = openBrowser("chrome", { browserExecutable: browserExecutable(), logLevel: "error" });
+  }
+  return browser;
+};
+
+export const closeBrowser = async (): Promise<void> => {
+  if (browser !== null) {
+    const b = await browser;
+    browser = null;
+    await b.close({ silent: true });
+  }
+};
+
 export const episodeComposition = async (props: EpisodeProps) =>
   selectComposition({
     serveUrl: await serveUrl(),
     id: "Episode",
     inputProps: props,
     browserExecutable: browserExecutable(),
+    puppeteerInstance: await sharedBrowser(),
     logLevel: "error",
   });
 
@@ -74,6 +94,7 @@ export const renderEpisodeStill = async (
     imageFormat: "png",
     overwrite: true,
     browserExecutable: browserExecutable(),
+    puppeteerInstance: await sharedBrowser(),
     logLevel: "error",
     onBrowserLog: (log: BrowserLog) => {
       logs.push(log.text);

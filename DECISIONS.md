@@ -109,3 +109,14 @@ One line of reasoning per call. Grouped by build-brief step. Spec contradictions
 - **Captions carry a 3 px ink outline around the text-colour glyphs.** C03's second caption page sits on the flash white, where text colour alone vanishes; on every other frame the outline disappears into the dark ground.
 - **Pages are chosen for the fewest pages, then the shortest longest page, with breaks after punctuation preferred.** A greedy filler left "open." alone on its own page; this pager has no orphans and splits the Authority message at its sentences where it can.
 - **Captions are drawn as SVG text in their own layer, above the scene and outside any push or jolt.** "Turning it off changes nothing else", and a caption that shook with the blast would be the only readable thing moving.
+
+## Step 10: safe-zone check
+
+- **The check runs two ways: a sweep of every readable box on every frame of every target from the layout model, and boxes measured in the rendered page on the contact-sheet frames.** The sweep covers all 2,205 frames; the measurement proves the model matches what actually paints, and fails if it doesn't (6 px tolerance).
+- **The master gets its own row on the contact sheet, checked against the union of all five interfaces.** The prompt asks for five platforms; the master is the file that can go anywhere, so it is shown too.
+- **Failing means overlapping a platform's interface band or leaving that target's stage.** The prompt's rule is the first; the second is stricter and catches drift into the pad before it becomes an overlap.
+- **The contact-sheet frames are picked from the timeline (DAY card once drawn, the last hidden-figure frame with a caption at the deepest push, the handprint mid-caption, the first end-card frame).** Episode 2 gets the same four views without anyone typing frame numbers.
+- **Text boxes are modelled as the font's full ascent plus descent (1.3 em for Plex Mono), outline included.** The first measured run showed the painted DAY line 20 px taller than a 1.0 em model.
+- **Captions stop at the end card.** The end card shows the tally and nothing else; "why" is still captioned over the cut to black.
+- **Long tallies wrap onto further rows of as many five-bar gates as the stage allows (three).** Season 1 peaks at six, but a card that overflowed at 25 would break the day the count gets there.
+- **Debug colours live in `src/palette.ts` under `DEBUG`.** No hex value appears outside that file.

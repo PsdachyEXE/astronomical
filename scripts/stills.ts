@@ -7,7 +7,7 @@ import { join } from "node:path";
 import { isTargetId } from "../src/platforms";
 import { flagBool, flagString, main, parseArgs } from "./lib/args";
 import { slugOf, tmpDir } from "./lib/paths";
-import { episodeProps, renderEpisodeStill } from "./lib/remotion";
+import { closeBrowser, episodeProps, renderEpisodeStill } from "./lib/remotion";
 
 main(async () => {
   const args = parseArgs(process.argv.slice(2));
@@ -23,4 +23,5 @@ main(async () => {
     await renderEpisodeStill(props, frame, file);
     console.log(`  ${seconds.toFixed(2)} s → ${file}`);
   }
+  await closeBrowser();
 });

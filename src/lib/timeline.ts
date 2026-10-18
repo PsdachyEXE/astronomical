@@ -438,17 +438,21 @@ export const buildTimeline = (input: BuildInput): { timeline: Timeline; problems
   // Captions.
   const maxChars = charsPerRow(UNIVERSAL_STAGE.w);
   const allLines = cues.flatMap((c) => c.lines.map((l) => ({ cue: c.id, line: l })));
-  const captions: CaptionPage[] = allLines.flatMap(({ cue, line }, k) =>
-    captionLine({
-      cue,
-      line: line.index,
-      words: line.words,
-      lineEnd: line.end,
-      nextLineStart: allLines[k + 1]?.line.start ?? null,
-      radio: line.radio,
-      maxChars,
-    }),
-  );
+  // Captions never spill onto the end card: it shows the tally and nothing else.
+  const endCardStart = cues.find((c) => c.part === "end")?.start ?? Number.POSITIVE_INFINITY;
+  const captions: CaptionPage[] = allLines
+    .flatMap(({ cue, line }, k) =>
+      captionLine({
+        cue,
+        line: line.index,
+        words: line.words,
+        lineEnd: line.end,
+        nextLineStart: allLines[k + 1]?.line.start ?? null,
+        radio: line.radio,
+        maxChars,
+      }),
+    )
+    .map((p) => (p.start < endCardStart ? { ...p, end: Math.min(p.end, endCardStart) } : p));
 
   const narratorWords = allLines
     .filter(({ line }) => !line.radio)
