@@ -279,6 +279,21 @@ const checkStyle = (): string[] => {
   ];
 };
 
+// 10 ------------------------------------------------------------------------
+const checkNewEpisode = (): string[] => {
+  // A copy of the Episode 1 script renamed to ep02, scaffolded and built from scratch.
+  copyFileSync(docFile("ep01"), docFile("ep02"));
+  const scaffold = npm("new-episode", "--", "docs/ep02.md", "--force");
+  const timeline = npm("timeline", "--", "ep02");
+  const lastLine = timeline.trim().split("\n").pop() ?? "";
+  expect(lastLine.includes("out/ep02.timeline.json"), `npm run timeline -- ep02 did not finish cleanly: ${lastLine}`);
+  const doc = /Against docs\/ep02\.md: ([^\n]+)/.exec(timeline)?.[1] ?? "no comparison printed";
+  return [
+    `npm run new-episode -- docs/ep02.md → ${scaffold.split("\n").find((l) => l.startsWith("✓ episodes/")) ?? "episodes/ep02.json"}`,
+    `npm run timeline -- ep02 passes; ${doc}`,
+  ];
+};
+
 main(async () => {
   const args = parseArgs(process.argv.slice(2));
   const slug = slugOf(args.positional[0] ?? "ep01");
@@ -295,6 +310,7 @@ main(async () => {
     [7, "Variants identical to the master outside the stage", () => checkPixels(slug, timeline)],
     [8, "Fixture: tally change 3 → 4 draws the fourth stroke", () => checkFixture()],
     [9, "No eyes, hands, feet or extra gradients; push is the only camera move", () => checkStyle()],
+    [10, "new-episode on a renamed copy of docs/ep01.md passes the timeline", () => checkNewEpisode()],
   ];
   for (const [id, name, fn] of tests) {
     process.stdout.write(`${id}. ${name} … `);
